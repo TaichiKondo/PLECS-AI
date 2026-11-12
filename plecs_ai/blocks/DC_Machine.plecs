@@ -1,0 +1,91 @@
+    Component {
+      Type          Reference
+      SrcComponent  "Components/Electrical/Machines/DC Machine"
+      Name          "DC Machine"
+      Show          on
+      Position      [545, 130]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-25, -18; 25, 45]
+      Parameter {
+        Variable      "Ra"
+        Value         "0.57"
+        Show          off
+      }
+      Parameter {
+        Variable      "La"
+        Value         "0.0043"
+        Show          off
+      }
+      Parameter {
+        Variable      "Rf"
+        Value         "190"
+        Show          off
+      }
+      Parameter {
+        Variable      "Lf"
+        Value         "0.2"
+        Show          off
+      }
+      Parameter {
+        Variable      "Laf"
+        Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "J"
+        Value         "0.0881"
+        Show          off
+      }
+      Parameter {
+        Variable      "F"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "wm0"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "thm0"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "ia0"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "if0"
+        Value         "0"
+        Show          off
+      }
+      Terminal {
+        Type          Port
+        Position      [-30, 0]
+        Direction     left
+      }
+      Terminal {
+        Type          Port
+        Position      [30, 0]
+        Direction     right
+      }
+      Terminal {
+        Type          Port
+        Position      [-30, 30]
+        Direction     left
+      }
+      Terminal {
+        Type          Port
+        Position      [30, 30]
+        Direction     right
+      }
+      Terminal {
+        Type          Rotational
+        Position      [30, 40]
+        Direction     right
+      }
+    }

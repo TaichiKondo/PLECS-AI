@@ -1,0 +1,2 @@
+# .plecs files are CRLF + ASCII and must not be converted by git
+*.plecs -text

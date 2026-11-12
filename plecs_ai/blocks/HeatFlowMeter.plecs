@@ -1,0 +1,9 @@
+    Component {
+      Type          HeatFlowMeter
+      Name          "Wm"
+      Show          on
+      Position      [360, 55]
+      Direction     left
+      Flipped       off
+      LabelPosition south
+    }

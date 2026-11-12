@@ -1,0 +1,52 @@
+    Component {
+      Type          Reference
+      SrcComponent  "Components/Mechanical/Rotational/Components/Planetary\\nG"
+"ear Set"
+      Name          "Planetary\nGear Set"
+      Show          on
+      Position      [660, 330]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-25, -45; 25, 45]
+      Parameter {
+        Variable      "Ns"
+        Value         "PGS.Ns"
+        Show          off
+      }
+      Parameter {
+        Variable      "Np"
+        Value         "PGS.Np"
+        Show          off
+      }
+      Parameter {
+        Variable      "Nr"
+        Value         "PGS.Nr"
+        Show          off
+      }
+      Parameter {
+        Variable      "J_planet"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "w_init_planet"
+        Value         "0"
+        Show          off
+      }
+      Terminal {
+        Type          Rotational
+        Position      [30, 0]
+        Direction     right
+      }
+      Terminal {
+        Type          Rotational
+        Position      [30, -15]
+        Direction     right
+      }
+      Terminal {
+        Type          Rotational
+        Position      [-30, 0]
+        Direction     left
+      }
+    }

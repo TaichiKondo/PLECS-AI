@@ -1,0 +1,24 @@
+    Component {
+      Type          MutInductor
+      Name          "M2"
+      Show          on
+      Position      [150, 150]
+      Direction     left
+      Flipped       off
+      LabelPosition north
+      Parameter {
+        Variable      "Windings"
+        Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "L"
+        Value         "[3.9e-3 3.866e-3; 3.866e-3 3.9e-3]"
+        Show          off
+      }
+      Parameter {
+        Variable      "i_init"
+        Value         "0"
+        Show          off
+      }
+    }

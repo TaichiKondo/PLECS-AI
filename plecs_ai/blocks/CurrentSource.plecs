@@ -1,0 +1,19 @@
+    Component {
+      Type          CurrentSource
+      Name          "I"
+      Show          on
+      Position      [475, 145]
+      Direction     down
+      Flipped       off
+      LabelPosition east
+      Parameter {
+        Variable      "DiscretizationBehavior"
+        Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "StateSpaceInlining"
+        Value         "1"
+        Show          off
+      }
+    }

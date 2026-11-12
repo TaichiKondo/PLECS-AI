@@ -1,0 +1,14 @@
+    Component {
+      Type          ConstantTemperature
+      Name          "T"
+      Show          off
+      Position      [405, 75]
+      Direction     down
+      Flipped       on
+      LabelPosition east
+      Parameter {
+        Variable      "T"
+        Value         "25"
+        Show          on
+      }
+    }

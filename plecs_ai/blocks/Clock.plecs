@@ -1,0 +1,9 @@
+    Component {
+      Type          Clock
+      Name          "Clock1"
+      Show          off
+      Position      [25, 85]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+    }

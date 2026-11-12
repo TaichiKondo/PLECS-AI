@@ -1,0 +1,19 @@
+    Component {
+      Type          Saturation
+      Name          "Saturation"
+      Show          on
+      Position      [695, 120]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "UpperLimit"
+        Value         "0.5"
+        Show          off
+      }
+      Parameter {
+        Variable      "LowerLimit"
+        Value         "-0.5"
+        Show          off
+      }
+    }

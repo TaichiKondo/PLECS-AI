@@ -1,0 +1,34 @@
+    Component {
+      Type          Lookup3D
+      Name          "3D-Table"
+      Show          on
+      Position      [110, 125]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "x"
+        Value         "PV_V"
+        Show          off
+      }
+      Parameter {
+        Variable      "y"
+        Value         "PV_Sun"
+        Show          off
+      }
+      Parameter {
+        Variable      "z"
+        Value         "PV_T"
+        Show          off
+      }
+      Parameter {
+        Variable      "f(x,y,z)"
+        Value         "Isurf_BP365_T25*llstrings"
+        Show          off
+      }
+      Parameter {
+        Variable      "ZeroCrossingSignals"
+        Value         "1"
+        Show          off
+      }
+    }

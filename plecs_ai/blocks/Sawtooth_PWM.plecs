@@ -1,0 +1,51 @@
+    Component {
+      Type          Reference
+      SrcComponent  "Components/Control/Modulators/Sawtooth PWM"
+      Name          "Modulator"
+      Show          on
+      Position      [175, 180]
+      Direction     right
+      Flipped       off
+      LabelPosition west
+      Frame         [-20, -20; 20, 20]
+      Parameter {
+        Variable      "config"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "ramp"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "fc"
+        Value         "f_sw"
+        Show          off
+      }
+      Parameter {
+        Variable      "carrier_phaseshift"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "carrier_limits"
+        Value         "[0 0.9]"
+        Show          off
+      }
+      Parameter {
+        Variable      "output_values"
+        Value         "[0 1]"
+        Show          off
+      }
+      Terminal {
+        Type          Output
+        Position      [24, 0]
+        Direction     right
+      }
+      Terminal {
+        Type          Input
+        Position      [-20, 0]
+        Direction     left
+      }
+    }

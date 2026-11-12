@@ -1,0 +1,42 @@
+    Component {
+      Type          Reference
+      SrcComponent  "Components/Assertions/Assert Range"
+      Name          "Assert Range"
+      Show          off
+      Position      [600, 325]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-15, -15; 15, 15]
+      Parameter {
+        Variable      "upper_limit"
+        Value         "1e6"
+        Show          off
+      }
+      Parameter {
+        Variable      "lower_limit"
+        Value         "1e4"
+        Show          off
+      }
+      Parameter {
+        Variable      "include_limits"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "action"
+        Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "message"
+        Value         "Frequency not within the set limits!"
+        Show          off
+        Evaluate      off
+      }
+      Terminal {
+        Type          Input
+        Position      [-15, 0]
+        Direction     left
+      }
+    }

@@ -1,0 +1,24 @@
+    Component {
+      Type          Mass
+      Name          "Vehicle\nMass"
+      Show          on
+      Position      [595, 155]
+      Direction     up
+      Flipped       on
+      LabelPosition north
+      Parameter {
+        Variable      "m"
+        Value         "m_v"
+        Show          off
+      }
+      Parameter {
+        Variable      "v0"
+        Value         "v_init"
+        Show          off
+      }
+      Parameter {
+        Variable      "x0"
+        Value         ""
+        Show          off
+      }
+    }

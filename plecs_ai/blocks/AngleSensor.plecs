@@ -1,0 +1,19 @@
+    Component {
+      Type          AngleSensor
+      Name          "Motor Position"
+      Show          on
+      Position      [550, 275]
+      Direction     down
+      Flipped       on
+      LabelPosition south
+      Parameter {
+        Variable      "SecondFlange"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "theta0"
+        Value         "0"
+        Show          off
+      }
+    }

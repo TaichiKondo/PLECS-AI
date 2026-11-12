@@ -1,0 +1,41 @@
+    Component {
+      Type          Reference
+      SrcComponent  "Components/Control/Logical/D Flip-flop"
+      Name          "D Flip-flop"
+      Show          on
+      Position      [200, 90]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-20, -20; 20, 20]
+      Parameter {
+        Variable      "trigger"
+        Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "x_init"
+        Value         "1"
+        Show          off
+      }
+      Terminal {
+        Type          Input
+        Position      [-20, -10]
+        Direction     left
+      }
+      Terminal {
+        Type          Input
+        Position      [-20, 10]
+        Direction     left
+      }
+      Terminal {
+        Type          Output
+        Position      [24, -10]
+        Direction     right
+      }
+      Terminal {
+        Type          Output
+        Position      [24, 10]
+        Direction     right
+      }
+    }

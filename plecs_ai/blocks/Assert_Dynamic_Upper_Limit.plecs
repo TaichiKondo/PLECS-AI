@@ -1,0 +1,38 @@
+    Component {
+      Type          Reference
+      SrcComponent  "Components/Assertions/Assert Dynamic\\nUpper Limit"
+      Name          "Id derating"
+      Show          off
+      Position      [210, 130]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-15, -15; 15, 15]
+      Parameter {
+        Variable      "include_limit"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "action"
+        Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "message"
+        Value         "Device operates out of Ids temperature derating SOA"
+"!"
+        Show          off
+        Evaluate      off
+      }
+      Terminal {
+        Type          Input
+        Position      [-15, 0]
+        Direction     left
+      }
+      Terminal {
+        Type          Input
+        Position      [-15, -10]
+        Direction     left
+      }
+    }

@@ -1,0 +1,19 @@
+    Component {
+      Type          SignalSelector
+      Name          "Cont\nSelector"
+      Show          off
+      Position      [705, 135]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "InputWidth"
+        Value         "4"
+        Show          off
+      }
+      Parameter {
+        Variable      "OutputIndices"
+        Value         "[1 3 2 4]"
+        Show          off
+      }
+    }

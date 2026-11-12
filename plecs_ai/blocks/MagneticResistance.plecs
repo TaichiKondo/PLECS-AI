@@ -1,0 +1,14 @@
+    Component {
+      Type          MagneticResistance
+      Name          "Ra"
+      Show          on
+      Position      [140, 90]
+      Direction     up
+      Flipped       off
+      LabelPosition east
+      Parameter {
+        Variable      "R"
+        Value         "(n(1)^2)/Rfe*(2/3)"
+        Show          off
+      }
+    }

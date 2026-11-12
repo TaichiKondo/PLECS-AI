@@ -1,0 +1,6 @@
+__pycache__/
+*.egg-info/
+results/
+*.plecs.bak
+tests/block_tests.plecs
+examples/balancer/

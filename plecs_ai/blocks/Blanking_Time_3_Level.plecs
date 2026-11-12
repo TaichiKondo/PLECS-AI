@@ -1,0 +1,27 @@
+    Component {
+      Type          Reference
+      SrcComponent  "Components/Control/Modulators/Blanking Time\\n(3-Leve"
+"l)"
+      Name          "Dead Time\n(3-Level)"
+      Show          on
+      Position      [570, 105]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-20, -20; 20, 20]
+      Parameter {
+        Variable      "tb"
+        Value         "tDead"
+        Show          on
+      }
+      Terminal {
+        Type          Output
+        Position      [24, 0]
+        Direction     right
+      }
+      Terminal {
+        Type          Input
+        Position      [-20, 0]
+        Direction     left
+      }
+    }

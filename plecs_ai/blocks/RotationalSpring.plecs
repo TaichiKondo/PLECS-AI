@@ -1,0 +1,24 @@
+    Component {
+      Type          RotationalSpring
+      Name          "Torsion\nSpring"
+      Show          on
+      Position      [665, 160]
+      Direction     down
+      Flipped       on
+      LabelPosition south
+      Parameter {
+        Variable      "c"
+        Value         "100"
+        Show          off
+      }
+      Parameter {
+        Variable      "theta0"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "dtheta0"
+        Value         "0"
+        Show          off
+      }
+    }

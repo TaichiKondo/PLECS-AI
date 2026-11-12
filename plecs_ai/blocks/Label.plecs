@@ -1,0 +1,19 @@
+    Component {
+      Type          Label
+      Name          "Label"
+      Show          off
+      Position      [360, 160]
+      Direction     up
+      Flipped       off
+      LabelPosition east
+      Parameter {
+        Variable      "Tag"
+        Value         "vo"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "1"
+        Show          off
+      }
+    }

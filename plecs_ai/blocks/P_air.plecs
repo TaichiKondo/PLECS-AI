@@ -1,0 +1,36 @@
+    Component {
+      Type          Reference
+      SrcComponent  "Components/Magnetic/Components/P_air"
+      Name          "P_g1"
+      Show          on
+      Position      [145, 180]
+      Direction     up
+      Flipped       off
+      LabelPosition east
+      Frame         [-8, -10; 8, 10]
+      Parameter {
+        Variable      "A"
+        Value         "0.0043*0.0033"
+        Show          off
+      }
+      Parameter {
+        Variable      "l"
+        Value         "0.0003"
+        Show          off
+      }
+      Parameter {
+        Variable      "F_init"
+        Value         "0"
+        Show          off
+      }
+      Terminal {
+        Type          MagneticPort
+        Position      [0, -15]
+        Direction     up
+      }
+      Terminal {
+        Type          MagneticPort
+        Position      [0, 15]
+        Direction     down
+      }
+    }

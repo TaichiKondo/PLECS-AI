@@ -1,0 +1,19 @@
+    Component {
+      Type          SignalSwitch
+      Name          "Switch"
+      Show          on
+      Position      [170, 225]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Criteria"
+        Value         "3"
+        Show          off
+      }
+      Parameter {
+        Variable      "Threshold"
+        Value         "0"
+        Show          off
+      }
+    }

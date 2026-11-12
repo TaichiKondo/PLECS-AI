@@ -1,0 +1,19 @@
+    Component {
+      Type          ControlledRotationalSpeed
+      Name          "Speed2"
+      Show          off
+      Position      [655, 240]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "SecondFlange"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "StateSpaceInlining"
+        Value         "1"
+        Show          off
+      }
+    }

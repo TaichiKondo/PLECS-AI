@@ -1,0 +1,19 @@
+    Component {
+      Type          Input
+      Name          "ISENSE"
+      Show          on
+      Position      [40, 90]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Index"
+        Value         "1"
+        Show          on
+      }
+      Parameter {
+        Variable      "Width"
+        Value         "-1"
+        Show          off
+      }
+    }

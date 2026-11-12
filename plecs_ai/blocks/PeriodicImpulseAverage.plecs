@@ -1,0 +1,14 @@
+    Component {
+      Type          PeriodicImpulseAverage
+      Name          "Periodic Impulse\nAverage"
+      Show          on
+      Position      [365, 310]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "T_average"
+        Value         "0.1"
+        Show          off
+      }
+    }

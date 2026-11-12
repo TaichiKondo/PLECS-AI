@@ -1,0 +1,96 @@
+    Component {
+      Type          Reference
+      SrcComponent  "Components/Electrical/Power Modules/MHB1"
+      Name          "MHBA+"
+      Show          on
+      Position      [385, 150]
+      Direction     up
+      Flipped       off
+      LabelPosition northeast
+      Frame         [-20, -60; 20, 60]
+      Parameter {
+        Variable      "semiSymbol"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "N"
+        Value         "size(C_sm_vector, 2)"
+        Show          off
+      }
+      Parameter {
+        Variable      "assert"
+        Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "switchModel"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "combineRevDiode"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "thermalIgbtDiode"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "thermalIgbt"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "thermalMosfetDiode"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "thermalMosfet"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "thermalRevDiode"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "Configuration"
+        Value         "2"
+        Show          off
+      }
+      Terminal {
+        Type          Input
+        Position      [-20, -20]
+        Direction     left
+      }
+      Terminal {
+        Type          Port
+        Position      [0, -65]
+        Direction     up
+      }
+      Terminal {
+        Type          Port
+        Position      [0, 65]
+        Direction     down
+      }
+      Terminal {
+        Type          Port
+        Position      [25, -40]
+        Direction     right
+      }
+      Terminal {
+        Type          Input
+        Position      [-20, 20]
+        Direction     left
+      }
+      Terminal {
+        Type          Port
+        Position      [25, 40]
+        Direction     right
+      }
+    }

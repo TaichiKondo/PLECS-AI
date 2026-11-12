@@ -1,0 +1,44 @@
+    Component {
+      Type          PiSectionLine
+      Name          "DC\nTransmission\nLine+"
+      Show          on
+      Position      [955, 250]
+      Direction     up
+      Flipped       off
+      LabelPosition north
+      Parameter {
+        Variable      "L"
+        Value         "1e-4"
+        Show          off
+      }
+      Parameter {
+        Variable      "R"
+        Value         "0.01"
+        Show          off
+      }
+      Parameter {
+        Variable      "C"
+        Value         "1e-6"
+        Show          off
+      }
+      Parameter {
+        Variable      "G"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "l"
+        Value         "500"
+        Show          off
+      }
+      Parameter {
+        Variable      "n"
+        Value         "3"
+        Show          off
+      }
+      Parameter {
+        Variable      "v_init"
+        Value         "0"
+        Show          off
+      }
+    }

@@ -1,0 +1,31 @@
+    Component {
+      Type          Reference
+      SrcComponent  "Components/Control/Modulators/2-Pulse\\nGenerator"
+      Name          "2-Pulse\nGenerator"
+      Show          on
+      Position      [190, 220]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-30, -30; 30, 30]
+      Terminal {
+        Type          Input
+        Position      [-30, -20]
+        Direction     left
+      }
+      Terminal {
+        Type          Input
+        Position      [-30, 20]
+        Direction     left
+      }
+      Terminal {
+        Type          Input
+        Position      [-30, 0]
+        Direction     left
+      }
+      Terminal {
+        Type          Output
+        Position      [34, 0]
+        Direction     right
+      }
+    }

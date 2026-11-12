@@ -1,0 +1,77 @@
+    Component {
+      Type          Reference
+      SrcComponent  "Components/Electrical/Machines/Switched Reluctance\\nMach"
+"ine (6\\/4)"
+      Name          "6/4 SRM"
+      Show          off
+      Position      [330, 170]
+      Direction     up
+      Flipped       off
+      LabelPosition east
+      Frame         [-25, -25; 25, 35]
+      Parameter {
+        Variable      "R"
+        Value         "0.05"
+        Show          off
+      }
+      Parameter {
+        Variable      "Lu"
+        Value         "0.67e-3"
+        Show          off
+      }
+      Parameter {
+        Variable      "La"
+        Value         "23.62e-3"
+        Show          off
+      }
+      Parameter {
+        Variable      "Lsat"
+        Value         "0.15e-3"
+        Show          off
+      }
+      Parameter {
+        Variable      "Psisat"
+        Value         "439.6e-3"
+        Show          off
+      }
+      Parameter {
+        Variable      "J"
+        Value         "0.02"
+        Show          off
+      }
+      Parameter {
+        Variable      "F"
+        Value         "0.02"
+        Show          off
+      }
+      Parameter {
+        Variable      "wm0"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "thm0"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "i0"
+        Value         "[0 0 0]"
+        Show          off
+      }
+      Terminal {
+        Type          Port
+        Position      [-30, 10]
+        Direction     left
+      }
+      Terminal {
+        Type          Port
+        Position      [-30, -10]
+        Direction     left
+      }
+      Terminal {
+        Type          Rotational
+        Position      [30, 30]
+        Direction     right
+      }
+    }

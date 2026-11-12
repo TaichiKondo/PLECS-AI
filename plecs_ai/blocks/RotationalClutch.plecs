@@ -1,0 +1,19 @@
+    Component {
+      Type          RotationalClutch
+      Name          "Rotational\nClutch"
+      Show          off
+      Position      [255, 265]
+      Direction     right
+      Flipped       off
+      LabelPosition west
+      Parameter {
+        Variable      "s_init"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "theta0"
+        Value         ""
+        Show          off
+      }
+    }

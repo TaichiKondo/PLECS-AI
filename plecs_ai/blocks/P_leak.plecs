@@ -1,0 +1,31 @@
+    Component {
+      Type          Reference
+      SrcComponent  "Components/Magnetic/Components/P_leak"
+      Name          "P_4"
+      Show          on
+      Position      [545, 180]
+      Direction     up
+      Flipped       off
+      LabelPosition east
+      Frame         [-8, -15; 8, 15]
+      Parameter {
+        Variable      "P"
+        Value         "36.7e-9"
+        Show          off
+      }
+      Parameter {
+        Variable      "F_init"
+        Value         "0"
+        Show          off
+      }
+      Terminal {
+        Type          MagneticPort
+        Position      [0, -20]
+        Direction     up
+      }
+      Terminal {
+        Type          MagneticPort
+        Position      [0, 20]
+        Direction     down
+      }
+    }

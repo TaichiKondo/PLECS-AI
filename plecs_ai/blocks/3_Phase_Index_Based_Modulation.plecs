@@ -1,0 +1,32 @@
+    Component {
+      Type          Reference
+      SrcComponent  "Components/Control/Modulators/3-Phase Index-Bas"
+"ed\\nModulation"
+      Name          "3-Phase Index-Based\nModulation"
+      Show          on
+      Position      [140, 90]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-20, -20; 20, 20]
+      Parameter {
+        Variable      "config"
+        Value         "1"
+        Show          on
+      }
+      Terminal {
+        Type          Output
+        Position      [24, 0]
+        Direction     right
+      }
+      Terminal {
+        Type          Input
+        Position      [-20, 10]
+        Direction     left
+      }
+      Terminal {
+        Type          Input
+        Position      [-20, -10]
+        Direction     left
+      }
+    }

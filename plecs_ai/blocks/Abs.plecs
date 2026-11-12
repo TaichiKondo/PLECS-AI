@@ -1,0 +1,9 @@
+    Component {
+      Type          Abs
+      Name          "Abs"
+      Show          on
+      Position      [75, 40]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+    }

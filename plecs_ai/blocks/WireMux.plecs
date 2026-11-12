@@ -1,0 +1,14 @@
+    Component {
+      Type          WireMux
+      Name          "WMux"
+      Show          off
+      Position      [770, 490]
+      Direction     right
+      Flipped       on
+      LabelPosition south
+      Parameter {
+        Variable      "Width"
+        Value         "3"
+        Show          off
+      }
+    }

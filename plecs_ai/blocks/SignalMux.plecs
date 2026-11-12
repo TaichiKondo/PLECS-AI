@@ -1,0 +1,15 @@
+    Component {
+      Type          SignalMux
+      Name          "Mux"
+      Show          off
+      Position      [275, 770]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Frame         [-2, -15; 7, 15]
+      Parameter {
+        Variable      "Width"
+        Value         "3"
+        Show          off
+      }
+    }

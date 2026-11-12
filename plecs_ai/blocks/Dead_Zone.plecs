@@ -1,0 +1,31 @@
+    Component {
+      Type          Reference
+      SrcComponent  "Components/Control/Discontinuous/Dead Zone"
+      Name          "Dead Zone"
+      Show          on
+      Position      [335, 50]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-15, -15; 15, 15]
+      Parameter {
+        Variable      "lower"
+        Value         "-sin(beta/2)"
+        Show          off
+      }
+      Parameter {
+        Variable      "upper"
+        Value         "sin(beta/2)"
+        Show          off
+      }
+      Terminal {
+        Type          Input
+        Position      [-15, 0]
+        Direction     left
+      }
+      Terminal {
+        Type          Output
+        Position      [19, 0]
+        Direction     right
+      }
+    }

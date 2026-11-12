@@ -1,0 +1,116 @@
+    Component {
+      Type          Reference
+      SrcComponent  "Components/Electrical/Machines/Non-Excited SM"
+      Name          "Non-Excited SM"
+      Show          on
+      Position      [490, 210]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-25, -25; 25, 35]
+      Parameter {
+        Variable      "R"
+        Value         "Mot.Rs"
+        Show          off
+      }
+      Parameter {
+        Variable      "Lls"
+        Value         "Mot.Lss"
+        Show          off
+      }
+      Parameter {
+        Variable      "p"
+        Value         "Mot.p"
+        Show          off
+      }
+      Parameter {
+        Variable      "is0"
+        Value         "Mot.is0"
+        Show          off
+      }
+      Parameter {
+        Variable      "Id_r"
+        Value         "Mot.mag_t.imd"
+        Show          off
+      }
+      Parameter {
+        Variable      "Iq_r"
+        Value         "Mot.mag_t.imq"
+        Show          off
+      }
+      Parameter {
+        Variable      "Psid_r"
+        Value         "Mot.mag_t.Psid"
+        Show          off
+      }
+      Parameter {
+        Variable      "Psiq_r"
+        Value         "Mot.mag_t.Psiq"
+        Show          off
+      }
+      Parameter {
+        Variable      "Lmidd_r"
+        Value         "Mot.mag_t.Lmidd"
+        Show          off
+      }
+      Parameter {
+        Variable      "Lmidq_r"
+        Value         "Mot.mag_t.Lmidq"
+        Show          off
+      }
+      Parameter {
+        Variable      "Lmiqq_r"
+        Value         "Mot.mag_t.Lmiqq"
+        Show          off
+      }
+      Parameter {
+        Variable      "Nxdq"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "icheck"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "J"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "F"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "wm0"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "thm0"
+        Value         "Mot.thm0"
+        Show          off
+      }
+      Terminal {
+        Type          Port
+        Position      [-30, -10]
+        Direction     left
+      }
+      Terminal {
+        Type          Port
+        Position      [-30, 0]
+        Direction     left
+      }
+      Terminal {
+        Type          Port
+        Position      [-30, 10]
+        Direction     left
+      }
+      Terminal {
+        Type          Rotational
+        Position      [30, 30]
+        Direction     right
+      }
+    }

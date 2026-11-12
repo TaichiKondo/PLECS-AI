@@ -1,0 +1,14 @@
+    Component {
+      Type          Memory
+      Name          "Memory"
+      Show          on
+      Position      [195, 110]
+      Direction     right
+      Flipped       on
+      LabelPosition south
+      Parameter {
+        Variable      "X0"
+        Value         "0"
+        Show          off
+      }
+    }

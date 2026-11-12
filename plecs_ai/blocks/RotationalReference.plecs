@@ -1,0 +1,9 @@
+    Component {
+      Type          RotationalReference
+      Name          "Rotational\nFrame"
+      Show          off
+      Position      [385, 275]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+    }

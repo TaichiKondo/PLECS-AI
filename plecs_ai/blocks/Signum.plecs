@@ -1,0 +1,9 @@
+    Component {
+      Type          Signum
+      Name          "Sign"
+      Show          on
+      Position      [405, 50]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+    }

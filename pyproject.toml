@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "plecs-ai"
+version = "0.1.0"
+description = "Tools for AI-driven editing and simulation of PLECS Standalone models"
+requires-python = ">=3.9"
+
+[tool.setuptools]
+packages = ["plecs_ai"]
+
+[tool.setuptools.package-data]
+plecs_ai = ["blocks/*.plecs", "blocks/*.md", "blocks/*.json", "templates/*.plecs"]

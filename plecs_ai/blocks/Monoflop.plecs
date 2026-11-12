@@ -1,0 +1,29 @@
+    Component {
+      Type          Monoflop
+      Name          "Min Off Time"
+      Show          off
+      Position      [230, 120]
+      Direction     right
+      Flipped       on
+      LabelPosition south
+      Parameter {
+        Variable      "Trigger"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "DurationSource"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "Duration"
+        Value         "toff_min"
+        Show          on
+      }
+      Parameter {
+        Variable      "Rounding"
+        Value         "1"
+        Show          off
+      }
+    }

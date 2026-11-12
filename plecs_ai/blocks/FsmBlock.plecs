@@ -1,0 +1,615 @@
+    Component {
+      Type          FsmBlock
+      Name          "State Machine \nModulator"
+      Show          on
+      Position      [195, 80]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-35, -15; 35, 15]
+      Parameter {
+        Variable      "InputVariables"
+        Value         "ton,toff"
+        Show          off
+      }
+      Parameter {
+        Variable      "InputTypes"
+        Value         "1,1"
+        Show          off
+      }
+      Parameter {
+        Variable      "InternalConstants"
+        Value         "event"
+        Show          off
+      }
+      Parameter {
+        Variable      "InternalConstantValues"
+        Value         "1e-6"
+        Show          off
+      }
+      Parameter {
+        Variable      "InternalVariables"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "InternalVariableValues"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "OutputVariables"
+        Value         "S,T"
+        Show          off
+      }
+      Parameter {
+        Variable      "Declarations"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "TransitionOrder"
+        Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "SampleTime"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "Animate"
+        Value         "1"
+        Show          off
+      }
+      FSM {
+        Location       [638, 203; 1362, 634]
+        ZoomFactor     1
+        SliderPosition [0, 0]
+        FsmState {
+          Name          "Off"
+          Position      [240, 220]
+          Frame         [-60, -40; 60, 40]
+          Parameter {
+            Name     "EnterAction"
+            Value    "S=0;\nT=0;"
+          }
+          Parameter {
+            Name     "DuringAction"
+            Value    ""
+          }
+          Parameter {
+            Name     "ExitAction"
+            Value    ""
+          }
+        }
+        FsmState {
+          Name          "On"
+          Position      [490, 220]
+          Frame         [-60, -40; 60, 40]
+          Parameter {
+            Name     "EnterAction"
+            Value    "S=1;\nT=1;"
+          }
+          Parameter {
+            Name     "DuringAction"
+            Value    ""
+          }
+          Parameter {
+            Name     "ExitAction"
+            Value    ""
+          }
+        }
+        FsmState {
+          Name          ".Junction"
+          Position      [350, 135]
+        }
+        FsmState {
+          Name          "EventZERO"
+          Position      [370, 380]
+          Frame         [-60, -40; 60, 40]
+          Parameter {
+            Name     "EnterAction"
+            Value    "T=0;\n"
+          }
+          Parameter {
+            Name     "DuringAction"
+            Value    ""
+          }
+          Parameter {
+            Name     "ExitAction"
+            Value    ""
+          }
+        }
+        FsmState {
+          Name          ".Junction1"
+          Position      [360, 295]
+        }
+        FsmState {
+          Name          "EventCOMPARE"
+          Position      [360, 60]
+          Frame         [-60, -40; 60, 40]
+          Parameter {
+            Name     "EnterAction"
+            Value    "T=1;\n"
+          }
+          Parameter {
+            Name     "DuringAction"
+            Value    ""
+          }
+          Parameter {
+            Name     "ExitAction"
+            Value    ""
+          }
+        }
+        FsmState {
+          Name          ".PointState"
+          Position      [350, 180]
+        }
+        FsmState {
+          Name          "Default"
+          Position      [100, 220]
+          Frame         [-60, -40; 60, 40]
+          Parameter {
+            Name     "EnterAction"
+            Value    "S=0;"
+          }
+          Parameter {
+            Name     "DuringAction"
+            Value    ""
+          }
+          Parameter {
+            Name     "ExitAction"
+            Value    ""
+          }
+        }
+        FsmTransition {
+          FsmSrcInfo {
+            StatePath        ".PointState"
+            TerminalLoc      top
+            TerminalCoord    0.5
+            External         on
+          }
+          FsmDstInfo {
+            StatePath        ".Junction"
+            TerminalLoc      bottom
+            TerminalCoord    0.5
+            External         on
+          }
+          SegmentLengths      []
+          LabelPosition       0.5
+          Parameter {
+            Name     "Trigger"
+            Value    ""
+          }
+          Parameter {
+            Name     "Condition"
+            Value    ""
+          }
+          Parameter {
+            Name     "Action"
+            Value    ""
+          }
+          Parameter {
+            Name     "Priority"
+            Value    "1"
+          }
+        }
+        FsmTransition {
+          FsmSrcInfo {
+            StatePath        ".Junction"
+            TerminalLoc      top
+            TerminalCoord    0.5
+            External         on
+          }
+          FsmDstInfo {
+            StatePath        "EventCOMPARE"
+            TerminalLoc      bottom
+            TerminalCoord    0.403846
+            External         on
+          }
+          SegmentLengths      []
+          LabelPosition       0.5
+          Parameter {
+            Name     "Trigger"
+            Value    ""
+          }
+          Parameter {
+            Name     "Condition"
+            Value    ""
+          }
+          Parameter {
+            Name     "Action"
+            Value    ""
+          }
+          Parameter {
+            Name     "Priority"
+            Value    "2"
+          }
+        }
+        FsmTransition {
+          FsmSrcInfo {
+            StatePath        ".Junction"
+            TerminalLoc      right
+            TerminalCoord    0.5
+            External         on
+          }
+          FsmDstInfo {
+            StatePath        "On"
+            TerminalLoc      top
+            TerminalCoord    0.269231
+            External         on
+          }
+          SegmentLengths      []
+          LabelPosition       0.5
+          Parameter {
+            Name     "Trigger"
+            Value    ""
+          }
+          Parameter {
+            Name     "Condition"
+            Value    "ton>0"
+          }
+          Parameter {
+            Name     "Action"
+            Value    ""
+          }
+          Parameter {
+            Name     "Priority"
+            Value    "1"
+          }
+        }
+        FsmTransition {
+          FsmSrcInfo {
+            StatePath        "On"
+            TerminalLoc      bottom
+            TerminalCoord    0.307692
+            External         on
+          }
+          FsmDstInfo {
+            StatePath        ".Junction1"
+            TerminalLoc      right
+            TerminalCoord    0.5
+            External         on
+          }
+          SegmentLengths      []
+          LabelPosition       0.685
+          Parameter {
+            Name     "Trigger"
+            Value    "AFTER(ton)"
+          }
+          Parameter {
+            Name     "Condition"
+            Value    ""
+          }
+          Parameter {
+            Name     "Action"
+            Value    ""
+          }
+          Parameter {
+            Name     "Priority"
+            Value    "1"
+          }
+        }
+        FsmTransition {
+          FsmSrcInfo {
+            StatePath        ".Junction1"
+            TerminalLoc      left
+            TerminalCoord    0.5
+            External         on
+          }
+          FsmDstInfo {
+            StatePath        "Off"
+            TerminalLoc      bottom
+            TerminalCoord    0.586538
+            External         on
+          }
+          SegmentLengths      []
+          LabelPosition       0.355
+          Parameter {
+            Name     "Trigger"
+            Value    ""
+          }
+          Parameter {
+            Name     "Condition"
+            Value    "toff>0"
+          }
+          Parameter {
+            Name     "Action"
+            Value    ""
+          }
+          Parameter {
+            Name     "Priority"
+            Value    "1"
+          }
+        }
+        FsmTransition {
+          FsmSrcInfo {
+            StatePath        "EventCOMPARE"
+            TerminalLoc      right
+            TerminalCoord    0.328125
+            External         on
+          }
+          FsmDstInfo {
+            StatePath        "EventZERO"
+            TerminalLoc      right
+            TerminalCoord    0.90625
+            External         on
+          }
+          SegmentLengths      [194]
+          LabelPosition       0.515
+          Parameter {
+            Name     "Trigger"
+            Value    "AFTER(event)"
+          }
+          Parameter {
+            Name     "Condition"
+            Value    ""
+          }
+          Parameter {
+            Name     "Action"
+            Value    ""
+          }
+          Parameter {
+            Name     "Priority"
+            Value    "3"
+          }
+        }
+        FsmTransition {
+          FsmSrcInfo {
+            StatePath        "EventZERO"
+            TerminalLoc      left
+            TerminalCoord    0.359375
+            External         on
+          }
+          FsmDstInfo {
+            StatePath        "Off"
+            TerminalLoc      bottom
+            TerminalCoord    0.182692
+            External         on
+          }
+          SegmentLengths      []
+          LabelPosition       0.78
+          Parameter {
+            Name     "Trigger"
+            Value    ""
+          }
+          Parameter {
+            Name     "Condition"
+            Value    "toff>0"
+          }
+          Parameter {
+            Name     "Action"
+            Value    ""
+          }
+          Parameter {
+            Name     "Priority"
+            Value    "2"
+          }
+        }
+        FsmTransition {
+          FsmSrcInfo {
+            StatePath        "EventZERO"
+            TerminalLoc      right
+            TerminalCoord    0.375
+            External         on
+          }
+          FsmDstInfo {
+            StatePath        "On"
+            TerminalLoc      bottom
+            TerminalCoord    0.798077
+            External         on
+          }
+          SegmentLengths      []
+          LabelPosition       2.8
+          Parameter {
+            Name     "Trigger"
+            Value    ""
+          }
+          Parameter {
+            Name     "Condition"
+            Value    "ton>0"
+          }
+          Parameter {
+            Name     "Action"
+            Value    ""
+          }
+          Parameter {
+            Name     "Priority"
+            Value    "1"
+          }
+        }
+        FsmTransition {
+          FsmSrcInfo {
+            StatePath        "EventCOMPARE"
+            TerminalLoc      left
+            TerminalCoord    0.78125
+            External         on
+          }
+          FsmDstInfo {
+            StatePath        "Off"
+            TerminalLoc      top
+            TerminalCoord    0.153846
+            External         on
+          }
+          SegmentLengths      []
+          LabelPosition       2.76
+          Parameter {
+            Name     "Trigger"
+            Value    ""
+          }
+          Parameter {
+            Name     "Condition"
+            Value    "toff>0"
+          }
+          Parameter {
+            Name     "Action"
+            Value    ""
+          }
+          Parameter {
+            Name     "Priority"
+            Value    "2"
+          }
+        }
+        FsmTransition {
+          FsmSrcInfo {
+            StatePath        "EventCOMPARE"
+            TerminalLoc      right
+            TerminalCoord    0.734375
+            External         on
+          }
+          FsmDstInfo {
+            StatePath        "On"
+            TerminalLoc      top
+            TerminalCoord    0.740385
+            External         on
+          }
+          SegmentLengths      []
+          LabelPosition       0.79
+          Parameter {
+            Name     "Trigger"
+            Value    ""
+          }
+          Parameter {
+            Name     "Condition"
+            Value    "ton>0"
+          }
+          Parameter {
+            Name     "Action"
+            Value    ""
+          }
+          Parameter {
+            Name     "Priority"
+            Value    "1"
+          }
+        }
+        FsmTransition {
+          FsmSrcInfo {
+            StatePath        "Off"
+            TerminalLoc      top
+            TerminalCoord    0.548077
+            External         on
+          }
+          FsmDstInfo {
+            StatePath        ".Junction"
+            TerminalLoc      left
+            TerminalCoord    0.5
+            External         on
+          }
+          SegmentLengths      []
+          LabelPosition       0.605
+          Parameter {
+            Name     "Trigger"
+            Value    "AFTER(toff)"
+          }
+          Parameter {
+            Name     "Condition"
+            Value    ""
+          }
+          Parameter {
+            Name     "Action"
+            Value    ""
+          }
+          Parameter {
+            Name     "Priority"
+            Value    "1"
+          }
+        }
+        FsmTransition {
+          FsmSrcInfo {
+            StatePath        ".Junction1"
+            TerminalLoc      bottom
+            TerminalCoord    0.5
+            External         on
+          }
+          FsmDstInfo {
+            StatePath        "EventZERO"
+            TerminalLoc      top
+            TerminalCoord    0.403846
+            External         on
+          }
+          SegmentLengths      []
+          LabelPosition       0.5
+          Parameter {
+            Name     "Trigger"
+            Value    ""
+          }
+          Parameter {
+            Name     "Condition"
+            Value    ""
+          }
+          Parameter {
+            Name     "Action"
+            Value    ""
+          }
+          Parameter {
+            Name     "Priority"
+            Value    "2"
+          }
+        }
+        FsmTransition {
+          FsmSrcInfo {
+            StatePath        "EventZERO"
+            TerminalLoc      left
+            TerminalCoord    0.796875
+            External         on
+          }
+          FsmDstInfo {
+            StatePath        "Default"
+            TerminalLoc      bottom
+            TerminalCoord    0.423077
+            External         on
+          }
+          SegmentLengths      []
+          LabelPosition       0.5
+          Parameter {
+            Name     "Trigger"
+            Value    "AFTER(event)"
+          }
+          Parameter {
+            Name     "Condition"
+            Value    ""
+          }
+          Parameter {
+            Name     "Action"
+            Value    ""
+          }
+          Parameter {
+            Name     "Priority"
+            Value    "3"
+          }
+        }
+        FsmTransition {
+          FsmSrcInfo {
+            StatePath        "Default"
+            TerminalLoc      top
+            TerminalCoord    0.451923
+            External         on
+          }
+          FsmDstInfo {
+            StatePath        "EventCOMPARE"
+            TerminalLoc      left
+            TerminalCoord    0.359375
+            External         on
+          }
+          SegmentLengths      []
+          LabelPosition       0.5
+          Parameter {
+            Name     "Trigger"
+            Value    ""
+          }
+          Parameter {
+            Name     "Condition"
+            Value    ""
+          }
+          Parameter {
+            Name     "Action"
+            Value    ""
+          }
+          Parameter {
+            Name     "Priority"
+            Value    "1"
+          }
+        }
+      }
+    }

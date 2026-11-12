@@ -1,0 +1,106 @@
+    Component {
+      Type          Reference
+      SrcComponent  "Components/Electrical/Power Modules/NPC1"
+      Name          "NPC1"
+      Show          off
+      Position      [325, 200]
+      Direction     up
+      Flipped       off
+      LabelPosition eastSoutheast
+      Frame         [-30, -100; 30, 100]
+      Parameter {
+        Variable      "semiSymbol"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "assert"
+        Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "switchModel"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "combineRevDiode"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "thermalIgbtDiode"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "thermalIgbt"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "thermalMosfetDiode"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "thermalMosfet"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "thermalRevDiode"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "thermalDiode"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "Configuration"
+        Value         "1"
+        Show          off
+      }
+      Terminal {
+        Type          Input
+        Position      [-10, -30]
+        Direction     left
+      }
+      Terminal {
+        Type          Port
+        Position      [10, -105]
+        Direction     up
+      }
+      Terminal {
+        Type          Port
+        Position      [10, 105]
+        Direction     down
+      }
+      Terminal {
+        Type          Port
+        Position      [35, 0]
+        Direction     right
+      }
+      Terminal {
+        Type          Input
+        Position      [-10, 30]
+        Direction     left
+      }
+      Terminal {
+        Type          Input
+        Position      [-10, 80]
+        Direction     left
+      }
+      Terminal {
+        Type          Input
+        Position      [-10, -80]
+        Direction     left
+      }
+      Terminal {
+        Type          Port
+        Position      [-35, 0]
+        Direction     left
+      }
+    }

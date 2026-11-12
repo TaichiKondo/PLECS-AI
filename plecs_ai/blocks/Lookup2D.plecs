@@ -1,0 +1,29 @@
+    Component {
+      Type          Lookup2D
+      Name          "2D-Table"
+      Show          on
+      Position      [170, 105]
+      Direction     left
+      Flipped       off
+      LabelPosition north
+      Parameter {
+        Variable      "x"
+        Value         "[0:1:12]"
+        Show          off
+      }
+      Parameter {
+        Variable      "y"
+        Value         "[0:100:3000]/1.15"
+        Show          off
+      }
+      Parameter {
+        Variable      "f(x,y)"
+        Value         "TmLookup*1.7"
+        Show          off
+      }
+      Parameter {
+        Variable      "ZeroCrossingSignals"
+        Value         "1"
+        Show          off
+      }
+    }

@@ -1,0 +1,19 @@
+    Component {
+      Type          VoltageSource
+      Name          "V"
+      Show          on
+      Position      [180, 145]
+      Direction     down
+      Flipped       on
+      LabelPosition east
+      Parameter {
+        Variable      "DiscretizationBehavior"
+        Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "StateSpaceInlining"
+        Value         "1"
+        Show          off
+      }
+    }

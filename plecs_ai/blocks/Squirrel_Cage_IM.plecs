@@ -1,0 +1,91 @@
+    Component {
+      Type          Reference
+      SrcComponent  "Components/Electrical/Machines/Squirrel-Cage IM"
+      Name          "IM"
+      Show          on
+      Position      [620, 275]
+      Direction     up
+      Flipped       off
+      LabelPosition east
+      Frame         [-25, -25; 25, 35]
+      Parameter {
+        Variable      "Rs"
+        Value         "Rs"
+        Show          off
+      }
+      Parameter {
+        Variable      "Lls"
+        Value         "Lls"
+        Show          off
+      }
+      Parameter {
+        Variable      "Rr"
+        Value         "Rr"
+        Show          off
+      }
+      Parameter {
+        Variable      "Llr"
+        Value         "Llr"
+        Show          off
+      }
+      Parameter {
+        Variable      "Lm"
+        Value         "Lm"
+        Show          off
+      }
+      Parameter {
+        Variable      "J"
+        Value         "J"
+        Show          off
+      }
+      Parameter {
+        Variable      "F"
+        Value         "F"
+        Show          off
+      }
+      Parameter {
+        Variable      "p"
+        Value         "zp"
+        Show          off
+      }
+      Parameter {
+        Variable      "wm0"
+        Value         "180"
+        Show          off
+      }
+      Parameter {
+        Variable      "thm0"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "is0"
+        Value         "[0 0]"
+        Show          off
+      }
+      Parameter {
+        Variable      "psisdq0"
+        Value         "[0 0]"
+        Show          off
+      }
+      Terminal {
+        Type          Port
+        Position      [-30, -10]
+        Direction     left
+      }
+      Terminal {
+        Type          Port
+        Position      [-30, 0]
+        Direction     left
+      }
+      Terminal {
+        Type          Port
+        Position      [-30, 10]
+        Direction     left
+      }
+      Terminal {
+        Type          Rotational
+        Position      [30, 30]
+        Direction     right
+      }
+    }

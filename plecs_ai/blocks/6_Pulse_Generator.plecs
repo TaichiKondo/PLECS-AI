@@ -1,0 +1,41 @@
+    Component {
+      Type          Reference
+      SrcComponent  "Components/Control/Modulators/6-Pulse\\nGenerator"
+      Name          "6-Pulse\nGenerator"
+      Show          off
+      Position      [355, 95]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-30, -30; 30, 30]
+      Parameter {
+        Variable      "pulsewidth"
+        Value         "pi/3"
+        Show          off
+      }
+      Parameter {
+        Variable      "pulsetype"
+        Value         "1"
+        Show          off
+      }
+      Terminal {
+        Type          Input
+        Position      [-30, -20]
+        Direction     left
+      }
+      Terminal {
+        Type          Input
+        Position      [-30, 20]
+        Direction     left
+      }
+      Terminal {
+        Type          Input
+        Position      [-30, 0]
+        Direction     left
+      }
+      Terminal {
+        Type          Output
+        Position      [34, 0]
+        Direction     right
+      }
+    }

@@ -1,0 +1,9 @@
+    Component {
+      Type          TranslationalReference
+      Name          "Translational\nFrame"
+      Show          off
+      Position      [755, 210]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+    }

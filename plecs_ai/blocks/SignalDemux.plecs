@@ -1,0 +1,14 @@
+    Component {
+      Type          SignalDemux
+      Name          "Demux"
+      Show          off
+      Position      [155, 440]
+      Direction     right
+      Flipped       on
+      LabelPosition south
+      Parameter {
+        Variable      "Width"
+        Value         "[2 1]"
+        Show          off
+      }
+    }

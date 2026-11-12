@@ -1,0 +1,14 @@
+    Component {
+      Type          AmbientTemperature
+      Name          "Ambient"
+      Show          on
+      Position      [270, 70]
+      Direction     up
+      Flipped       on
+      LabelPosition east
+      Parameter {
+        Variable      "AllowStarConnection"
+        Value         "2"
+        Show          off
+      }
+    }

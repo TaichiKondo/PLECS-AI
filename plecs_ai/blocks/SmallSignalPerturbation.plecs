@@ -1,0 +1,14 @@
+    Component {
+      Type          SmallSignalPerturbation
+      Name          "m'"
+      Show          on
+      Position      [110, 125]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "ShowInput"
+        Value         "2"
+        Show          off
+      }
+    }

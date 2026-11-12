@@ -1,0 +1,26 @@
+    Component {
+      Type          Reference
+      SrcComponent  "Components/Control/Modulators/Blanking Time"
+      Name          "Blanking Time"
+      Show          on
+      Position      [215, 50]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-20, -20; 20, 20]
+      Parameter {
+        Variable      "tb"
+        Value         "td"
+        Show          off
+      }
+      Terminal {
+        Type          Output
+        Position      [24, 0]
+        Direction     right
+      }
+      Terminal {
+        Type          Input
+        Position      [-20, 0]
+        Direction     left
+      }
+    }

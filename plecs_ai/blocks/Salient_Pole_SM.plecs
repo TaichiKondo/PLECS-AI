@@ -1,0 +1,141 @@
+    Component {
+      Type          Reference
+      SrcComponent  "Components/Electrical/Machines/Salient-Pole SM"
+      Name          "Salient-Pole SM"
+      Show          on
+      Position      [150, 105]
+      Direction     down
+      Flipped       on
+      LabelPosition south
+      Frame         [-25, -25; 25, 35]
+      Parameter {
+        Variable      "configuration"
+        Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "Rs"
+        Value         "3e-3"
+        Show          off
+      }
+      Parameter {
+        Variable      "Lls"
+        Value         "3e-4"
+        Show          off
+      }
+      Parameter {
+        Variable      "Lm0"
+        Value         "[3e-3 1e-3]"
+        Show          off
+      }
+      Parameter {
+        Variable      "Lmdsat"
+        Value         "3e-3"
+        Show          off
+      }
+      Parameter {
+        Variable      "psiT"
+        Value         "0.2"
+        Show          off
+      }
+      Parameter {
+        Variable      "fT"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "Rf"
+        Value         "6e-4"
+        Show          off
+      }
+      Parameter {
+        Variable      "Llf"
+        Value         "3e-4"
+        Show          off
+      }
+      Parameter {
+        Variable      "Rk"
+        Value         "[1e-2 2e-2]"
+        Show          off
+      }
+      Parameter {
+        Variable      "Llk"
+        Value         "[5e-4 1e-3]"
+        Show          off
+      }
+      Parameter {
+        Variable      "ue"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "J"
+        Value         "4e6"
+        Show          off
+      }
+      Parameter {
+        Variable      "F"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "p"
+        Value         "16"
+        Show          off
+      }
+      Parameter {
+        Variable      "wm0"
+        Value         "2*pi*50/16"
+        Show          off
+      }
+      Parameter {
+        Variable      "thm0"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "is0"
+        Value         "[0 0]"
+        Show          off
+      }
+      Parameter {
+        Variable      "if0"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "psis0"
+        Value         "[0 0]"
+        Show          off
+      }
+      Terminal {
+        Type          Port
+        Position      [-30, -10]
+        Direction     left
+      }
+      Terminal {
+        Type          Port
+        Position      [-30, 0]
+        Direction     left
+      }
+      Terminal {
+        Type          Port
+        Position      [-30, 10]
+        Direction     left
+      }
+      Terminal {
+        Type          Port
+        Position      [30, -10]
+        Direction     right
+      }
+      Terminal {
+        Type          Port
+        Position      [30, 10]
+        Direction     right
+      }
+      Terminal {
+        Type          Rotational
+        Position      [30, 30]
+        Direction     right
+      }
+    }

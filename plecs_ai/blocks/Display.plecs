@@ -1,0 +1,20 @@
+    Component {
+      Type          Display
+      Name          "Total Power Loss (W)"
+      Show          on
+      Position      [460, 345]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-21, -11; 21, 11]
+      Parameter {
+        Variable      "Notation"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "Precision"
+        Value         "2"
+        Show          off
+      }
+    }

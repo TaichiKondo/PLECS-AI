@@ -1,0 +1,19 @@
+    Component {
+      Type          Port
+      Name          "S"
+      Show          on
+      Position      [95, 160]
+      Direction     down
+      Flipped       on
+      LabelPosition west
+      Parameter {
+        Variable      "Index"
+        Value         "1"
+        Show          on
+      }
+      Parameter {
+        Variable      "Width"
+        Value         "-1"
+        Show          off
+      }
+    }

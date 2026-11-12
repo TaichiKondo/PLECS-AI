@@ -1,0 +1,9 @@
+    Component {
+      Type          ThermalGround
+      Name          "Ground"
+      Show          off
+      Position      [405, 95]
+      Direction     up
+      Flipped       off
+      LabelPosition east
+    }

@@ -1,0 +1,79 @@
+    Component {
+      Type          SwitchLossCalculator
+      Name          "Switch Loss\nCalculator"
+      Show          off
+      Position      [315, 385]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "T_average"
+        Value         "0.02"
+        Show          off
+      }
+      Parameter {
+        Variable      "ConductionLoss"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "SwitchingLoss"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "TurnOnLoss"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "TurnOffLoss"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "TotalLoss"
+        Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "GroupTypes"
+        Value         "1"
+        Show          off
+      }
+      Probe {
+        Component     "D1"
+        Path          ""
+        Signals       {}
+      }
+      Probe {
+        Component     "D2"
+        Path          ""
+        Signals       {}
+      }
+      Probe {
+        Component     "D3"
+        Path          ""
+        Signals       {}
+      }
+      Probe {
+        Component     "D4"
+        Path          ""
+        Signals       {}
+      }
+      Probe {
+        Component     "D5"
+        Path          ""
+        Signals       {}
+      }
+      Probe {
+        Component     "Q1"
+        Path          "Q1"
+        Signals       {}
+      }
+      Probe {
+        Component     "D1"
+        Path          "Q1"
+        Signals       {}
+      }
+    }

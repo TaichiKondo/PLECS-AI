@@ -1,0 +1,51 @@
+    Component {
+      Type          Reference
+      SrcComponent  "Components/Control/Modulators/Variable Frequency PWM"
+      Name          "Variable\nFrequency PWM"
+      Show          on
+      Position      [140, 50]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-20, -20; 20, 20]
+      Parameter {
+        Variable      "CarrierType"
+        Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "Sampling"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "Frequency"
+        Value         "V_G"
+        Show          off
+      }
+      Parameter {
+        Variable      "CarrierLimits"
+        Value         "[0 1]"
+        Show          off
+      }
+      Parameter {
+        Variable      "OutputValues"
+        Value         "[0 1]"
+        Show          off
+      }
+      Terminal {
+        Type          Input
+        Position      [-20, -10]
+        Direction     left
+      }
+      Terminal {
+        Type          Input
+        Position      [-20, 10]
+        Direction     left
+      }
+      Terminal {
+        Type          Output
+        Position      [24, 0]
+        Direction     right
+      }
+    }

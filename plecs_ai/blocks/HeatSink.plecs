@@ -1,0 +1,35 @@
+    Component {
+      Type          HeatSink
+      Name          "Heat Sink Part 1"
+      Show          on
+      Position      [440, 135]
+      Direction     left
+      Flipped       on
+      LabelPosition north
+      Frame         [-37, -52; 37, 52]
+      Parameter {
+        Variable      "Cth"
+        Value         "45"
+        Show          off
+      }
+      Parameter {
+        Variable      "T_init"
+        Value         "25"
+        Show          off
+      }
+      Parameter {
+        Variable      "Width"
+        Value         "1"
+        Show          off
+      }
+      Terminal {
+        Type          HeatPort
+        Position      [-57, -30]
+        Direction     left
+      }
+      Terminal {
+        Type          HeatPort
+        Position      [10, 42]
+        Direction     down
+      }
+    }

@@ -1,0 +1,101 @@
+    Component {
+      Type          Reference
+      SrcComponent  "Components/Electrical/Machines/BLDC Machine"
+      Name          "BLDC"
+      Show          on
+      Position      [330, 195]
+      Direction     up
+      Flipped       off
+      LabelPosition east
+      Frame         [-25, -25; 25, 35]
+      Parameter {
+        Variable      "Kc"
+        Value         "[0 0 0 0 0 0 0 0 0 0 0]"
+        Show          off
+      }
+      Parameter {
+        Variable      "Ks"
+        Value         "0.4*24/pi^2*[1/2 0 1/9 0 1/50 0 -1/98 0 -1/81 0 -1/242]"
+        Show          off
+      }
+      Parameter {
+        Variable      "R"
+        Value         "0.388"
+        Show          off
+      }
+      Parameter {
+        Variable      "L0"
+        Value         "2.84e-3"
+        Show          off
+      }
+      Parameter {
+        Variable      "Lc"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "Ls"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "Tc"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "Ts"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "J"
+        Value         "2e-3"
+        Show          off
+      }
+      Parameter {
+        Variable      "F"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "p"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "wm0"
+        Value         "300"
+        Show          off
+      }
+      Parameter {
+        Variable      "thm0"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "i0"
+        Value         "[0 0]"
+        Show          off
+      }
+      Terminal {
+        Type          Port
+        Position      [-30, 0]
+        Direction     left
+      }
+      Terminal {
+        Type          Port
+        Position      [-30, 10]
+        Direction     left
+      }
+      Terminal {
+        Type          Port
+        Position      [-30, -10]
+        Direction     left
+      }
+      Terminal {
+        Type          Rotational
+        Position      [30, 30]
+        Direction     right
+      }
+    }

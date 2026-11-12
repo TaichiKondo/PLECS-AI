@@ -1,0 +1,14 @@
+    Component {
+      Type          ConstantTemperatureGnd
+      Name          "T5"
+      Show          off
+      Position      [530, 280]
+      Direction     down
+      Flipped       on
+      LabelPosition east
+      Parameter {
+        Variable      "T"
+        Value         "25"
+        Show          on
+      }
+    }

@@ -1,0 +1,19 @@
+    Component {
+      Type          Inductor
+      Name          "L1"
+      Show          on
+      Position      [420, 280]
+      Direction     left
+      Flipped       off
+      LabelPosition north
+      Parameter {
+        Variable      "L"
+        Value         "10e-6"
+        Show          on
+      }
+      Parameter {
+        Variable      "i_init"
+        Value         "0"
+        Show          off
+      }
+    }

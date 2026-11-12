@@ -1,0 +1,19 @@
+    Component {
+      Type          MagneticPermeance
+      Name          "Pa"
+      Show          on
+      Position      [140, 45]
+      Direction     up
+      Flipped       off
+      LabelPosition east
+      Parameter {
+        Variable      "P"
+        Value         "Lm/(n(1)^2)*1.5*4"
+        Show          off
+      }
+      Parameter {
+        Variable      "F_init"
+        Value         "0"
+        Show          off
+      }
+    }

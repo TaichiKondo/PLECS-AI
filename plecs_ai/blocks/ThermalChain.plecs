@@ -1,0 +1,24 @@
+    Component {
+      Type          ThermalChain
+      Name          "Thermal Chain"
+      Show          off
+      Position      [205, 90]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Rth"
+        Value         "[.00769 .015 .029 .114 .136 .059]"
+        Show          off
+      }
+      Parameter {
+        Variable      "Cth"
+        Value         "[.3763e-3 1.411e-3 1.931e-3 5.297e-3 .012 .091]"
+        Show          off
+      }
+      Parameter {
+        Variable      "T_init"
+        Value         "T_init"
+        Show          off
+      }
+    }

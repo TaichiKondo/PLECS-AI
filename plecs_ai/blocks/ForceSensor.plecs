@@ -1,0 +1,14 @@
+    Component {
+      Type          ForceSensor
+      Name          "Force\nSensor"
+      Show          off
+      Position      [525, 90]
+      Direction     down
+      Flipped       on
+      LabelPosition south
+      Parameter {
+        Variable      "SecondFlange"
+        Value         "2"
+        Show          off
+      }
+    }

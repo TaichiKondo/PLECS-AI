@@ -1,0 +1,19 @@
+    Component {
+      Type          RotationalDamper
+      Name          "Rotational\nDamper"
+      Show          on
+      Position      [665, 95]
+      Direction     down
+      Flipped       on
+      LabelPosition south
+      Parameter {
+        Variable      "D"
+        Value         "0.5"
+        Show          off
+      }
+      Parameter {
+        Variable      "theta0"
+        Value         ""
+        Show          off
+      }
+    }

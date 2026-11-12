@@ -1,0 +1,210 @@
+    Component {
+      Type          CScript
+      Name          "C-Script1"
+      Show          on
+      Position      [210, 110]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "DialogGeometry"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "NumInputs"
+        Value         "7"
+        Show          off
+      }
+      Parameter {
+        Variable      "NumOutputs"
+        Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "NumContStates"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "NumDiscStates"
+        Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "NumZCSignals"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "DirectFeedthrough"
+        Value         "[1 1 1 0 0 1 1]"
+        Show          off
+      }
+      Parameter {
+        Variable      "Ts"
+        Value         "Ts"
+        Show          off
+      }
+      Parameter {
+        Variable      "Parameters"
+        Value         "Ts, Kpzd, Kizd, Kpzq, Kizq, Ra, Vd0, Vq0"
+        Show          off
+      }
+      Parameter {
+        Variable      "LangStandard"
+        Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "GnuExtensions"
+        Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "RuntimeCheck"
+        Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "Declarations"
+        Value         "/*\t\n"
+"\tReference:\n"
+"\t\n"
+"\t\"Current and Flux Regulation in Field-Weakening Operation\", \n"
+"\tFernando Briz, Alberto Diez, Michael W. Degner, Robert D. Lorenz\n"
+"\t\n"
+"*/\n"
+"\n"
+"\n"
+"#define\tIN_e_d\t\tInput(0)\n"
+"#define\tIN_e_q\t\tInput(1)\n"
+"#define\tIN_ws\t\tInput(2)\n"
+"#define\tIN_y_d\t\tInput(3)\n"
+"#define\tIN_y_q\t\tInput(4)\n"
+"#define\tIN_yff_d\tInput(5)\n"
+"#define\tIN_yff_q\tInput(6)\n"
+"\n"
+"#define\tOUT_yset_d\tOutput(0)\n"
+"#define\tOUT_yset_q\tOutput(1)\n"
+"\n"
+"#define DS_Int_d DiscState(0)\n"
+"#define DS_Int_q DiscState(1)\n"
+"\n"
+"struct Parameters {\n"
+"\tdouble Ts;\n"
+"\tdouble Kp_d;\n"
+"\tdouble Ki_d;\n"
+"\tdouble Kp_q;\n"
+"\tdouble Ki_q;\n"
+"\tdouble Ra;\n"
+"};\n"
+"\n"
+"struct Constants {\n"
+"\tdouble Kpi_d;\n"
+"\tdouble Kpi_q;\n"
+"    \n"
+"\tdouble KpD_KpiD; \n"
+"\tdouble KpQ_KpiQ;\n"
+"};\n"
+"\n"
+"static struct Parameters P;\n"
+"static struct Constants C;\n"
+"\n"
+"/* values passed from output to update call */\n"
+"static double we, y_d, y_q;"
+        Show          off
+      }
+      Parameter {
+        Variable      "StartFcn"
+        Value         "if (NumParameters != 8){\n"
+"   SetErrorMessage(\"Number of parameters does not match.\");\n"
+"   return;\n"
+"}\n"
+"\n"
+"P.Ts = ParamRealData(0, 0);\n"
+"P.Kp_d = ParamRealData(1, 0);\n"
+"P.Ki_d = ParamRealData(2, 0);\n"
+"P.Kp_q = ParamRealData(3, 0);\n"
+"P.Ki_q = ParamRealData(4, 0);\n"
+"P.Ra = ParamRealData(5, 0);\n"
+"\n"
+"C.Kpi_d = P.Kp_d + P.Ki_d;\n"
+"C.Kpi_q = P.Kp_q + P.Ki_q;\n"
+"    \n"
+"C.KpD_KpiD = P.Kp_d / C.Kpi_d; // good fixed-point quantity < 1\n"
+"C.KpQ_KpiQ = P.Kp_q / C.Kpi_q; // good fixed-point quantity < 1\n"
+"\n"
+"DS_Int_d = ParamRealData(6, 0);\n"
+"DS_Int_q = ParamRealData(7, 0);"
+        Show          off
+      }
+      Parameter {
+        Variable      "OutputFcn"
+        Value         "double Kw_d, Kw_q;\n"
+"\n"
+"we = IN_ws * P.Ts;\n"
+"\n"
+"Kw_d = P.Kp_d * we;\n"
+"Kw_q = P.Kp_q * we;\n"
+"\t\n"
+"y_d = IN_e_d * C.Kpi_d - IN_e_q * Kw_q + DS_Int_d;\n"
+"y_q = IN_e_q * C.Kpi_q + IN_e_d * Kw_d + DS_Int_q;\n"
+"\n"
+"OUT_yset_d = y_d - P.Ra * IN_e_d;\n"
+"OUT_yset_q = y_q - P.Ra * IN_e_q;"
+        Show          off
+      }
+      Parameter {
+        Variable      "UpdateFcn"
+        Value         "#if 1\n"
+"/* determine realizable references */\n"
+"double den = we * we * C.KpD_KpiD * C.KpQ_KpiQ + 1;\n"
+"\n"
+"double Kc1_d = -we * C.KpD_KpiD * C.KpQ_KpiQ / den;\n"
+"double Kc1_q = -Kc1_d;\n"
+"\t\n"
+"double Kc2_d = -C.KpD_KpiD / den;\n"
+"double Kc2_q = -C.KpQ_KpiQ / den;\n"
+"\n"
+"double Kpep_d = Kc1_d*(IN_y_q - DS_Int_q) + Kc2_d*(IN_y_d - DS_Int_d);\n"
+"double Kpep_q = Kc1_q*(IN_y_d - DS_Int_d) + Kc2_q*(IN_y_q - DS_Int_q);\n"
+"\t\n"
+"/* update integrators */\t\n"
+"DS_Int_d = IN_y_d + Kpep_d;\n"
+"DS_Int_q = IN_y_q + Kpep_q;\t\n"
+"\n"
+"#else \n"
+"/* implementation w/o anti-windup */\n"
+"we = IN_ws * P.Ts;\n"
+"\n"
+"double Kw_d = P.Kp_d * we;\n"
+"double Kw_q = P.Kp_q * we;\n"
+"\n"
+"DS_Int_d += (P.Ki_d * IN_e_d - Kw_q * IN_e_q);\n"
+"DS_Int_q += (P.Ki_q * IN_e_q + Kw_d * IN_e_d);\n"
+"\n"
+"#endif"
+        Show          off
+      }
+      Parameter {
+        Variable      "DerivativeFcn"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "TerminateFcn"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "StoreCustomStateFcn"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "RestoreCustomStateFcn"
+        Value         ""
+        Show          off
+      }
+    }

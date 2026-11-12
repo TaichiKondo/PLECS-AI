@@ -1,0 +1,19 @@
+    Component {
+      Type          SmallSignalResponse
+      Name          "vo_oi'"
+      Show          on
+      Position      [550, 150]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "ShowReference"
+        Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "InvertReference"
+        Value         "1"
+        Show          off
+      }
+    }

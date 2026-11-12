@@ -1,0 +1,27 @@
+    Component {
+      Type          Reference
+      SrcComponent  "Components/Mechanical/Translational/Components/Rack and P"
+"inion"
+      Name          "Ball screw"
+      Show          on
+      Position      [635, 135]
+      Direction     down
+      Flipped       off
+      LabelPosition east
+      Frame         [-5, -20; 5, 20]
+      Parameter {
+        Variable      "R"
+        Value         "P.dpr / (2*pi)"
+        Show          off
+      }
+      Terminal {
+        Type          Rotational
+        Position      [10, 10]
+        Direction     right
+      }
+      Terminal {
+        Type          Translational
+        Position      [0, -25]
+        Direction     up
+      }
+    }

@@ -1,0 +1,19 @@
+    Component {
+      Type          MagneticInterface
+      Name          "MagInt4"
+      Show          off
+      Position      [145, 220]
+      Direction     up
+      Flipped       off
+      LabelPosition east
+      Parameter {
+        Variable      "n"
+        Value         "16"
+        Show          on
+      }
+      Parameter {
+        Variable      "Polarity"
+        Value         "1"
+        Show          off
+      }
+    }

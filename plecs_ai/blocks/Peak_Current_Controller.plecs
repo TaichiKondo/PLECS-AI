@@ -1,0 +1,47 @@
+    Component {
+      Type          Reference
+      SrcComponent  "Components/Control/Modulators/Peak Current\\nContro"
+"ller"
+      Name          "Peak Current\nController"
+      Show          on
+      Position      [160, 90]
+      Direction     up
+      Flipped       on
+      LabelPosition south
+      Frame         [-20, -20; 20, 20]
+      Parameter {
+        Variable      "fs"
+        Value         "fsw"
+        Show          off
+      }
+      Parameter {
+        Variable      "dmin"
+        Value         "5"
+        Show          off
+      }
+      Parameter {
+        Variable      "dmax"
+        Value         "95"
+        Show          off
+      }
+      Parameter {
+        Variable      "Islope"
+        Value         "1"
+        Show          off
+      }
+      Terminal {
+        Type          Input
+        Position      [-20, -10]
+        Direction     left
+      }
+      Terminal {
+        Type          Input
+        Position      [-20, 10]
+        Direction     left
+      }
+      Terminal {
+        Type          Output
+        Position      [24, 0]
+        Direction     right
+      }
+    }

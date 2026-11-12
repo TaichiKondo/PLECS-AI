@@ -1,0 +1,14 @@
+    Component {
+      Type          Resistor
+      Name          "R1"
+      Show          on
+      Position      [395, 95]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "R"
+        Value         "0.1"
+        Show          off
+      }
+    }

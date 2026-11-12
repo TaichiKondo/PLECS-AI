@@ -1,0 +1,26 @@
+    Component {
+      Type          Assertion
+      Name          "Assertion"
+      Show          on
+      Position      [210, 120]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Action"
+        Value         "4"
+        Show          off
+      }
+      Parameter {
+        Variable      "Message"
+        Value         "VCO input voltage signal must be greater than or eq"
+"ual to zero."
+        Show          off
+        Evaluate      off
+      }
+      Parameter {
+        Variable      "HighlightLevel"
+        Value         "1"
+        Show          off
+      }
+    }

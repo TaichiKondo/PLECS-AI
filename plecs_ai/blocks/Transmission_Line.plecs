@@ -1,0 +1,87 @@
+    Component {
+      Type          Reference
+      SrcComponent  "Components/Electrical/Passive Components/Transmission Lin"
+"e"
+      Name          "NA2XS(FL)2Y\n12/20 kV"
+      Show          on
+      Position      [565, 105]
+      Direction     up
+      Flipped       off
+      LabelPosition north
+      Frame         [-30, -15; 30, 15]
+      Parameter {
+        Variable      "L_"
+        Value         "0.363e-3"
+        Show          off
+      }
+      Parameter {
+        Variable      "M_"
+        Value         "0.121e-3"
+        Show          off
+      }
+      Parameter {
+        Variable      "R_"
+        Value         "0.206"
+        Show          off
+      }
+      Parameter {
+        Variable      "C_ph2n_"
+        Value         "0.25e-6"
+        Show          off
+      }
+      Parameter {
+        Variable      "C_ph2ph_"
+        Value         "0.083e-6"
+        Show          off
+      }
+      Parameter {
+        Variable      "l"
+        Value         "20"
+        Show          off
+      }
+      Parameter {
+        Variable      "n"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "Configuration"
+        Value         "2"
+        Show          off
+      }
+      Terminal {
+        Type          Port
+        Position      [-45, -10]
+        Direction     left
+      }
+      Terminal {
+        Type          Port
+        Position      [-45, 0]
+        Direction     left
+      }
+      Terminal {
+        Type          Port
+        Position      [-45, 10]
+        Direction     left
+      }
+      Terminal {
+        Type          Port
+        Position      [45, -10]
+        Direction     right
+      }
+      Terminal {
+        Type          Port
+        Position      [45, 0]
+        Direction     right
+      }
+      Terminal {
+        Type          Port
+        Position      [45, 10]
+        Direction     right
+      }
+      Terminal {
+        Type          Port
+        Position      [0, 20]
+        Direction     down
+      }
+    }

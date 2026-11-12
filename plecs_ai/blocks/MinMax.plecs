@@ -1,0 +1,19 @@
+    Component {
+      Type          MinMax
+      Name          "Min/Max"
+      Show          on
+      Position      [185, 55]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Operation"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "Inputs"
+        Value         "2"
+        Show          off
+      }
+    }

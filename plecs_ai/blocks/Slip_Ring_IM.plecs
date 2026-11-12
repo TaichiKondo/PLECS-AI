@@ -1,0 +1,111 @@
+    Component {
+      Type          Reference
+      SrcComponent  "Components/Electrical/Machines/Slip-Ring IM"
+      Name          "DFIG"
+      Show          off
+      Position      [240, 120]
+      Direction     down
+      Flipped       on
+      LabelPosition south
+      Frame         [-25, -25; 25, 35]
+      Parameter {
+        Variable      "Rs"
+        Value         "R_s"
+        Show          off
+      }
+      Parameter {
+        Variable      "Lls"
+        Value         "L_ks"
+        Show          off
+      }
+      Parameter {
+        Variable      "Rr"
+        Value         "R_r"
+        Show          off
+      }
+      Parameter {
+        Variable      "Llr"
+        Value         "L_kr"
+        Show          off
+      }
+      Parameter {
+        Variable      "Lm"
+        Value         "L_m"
+        Show          off
+      }
+      Parameter {
+        Variable      "ue"
+        Value         "k_sr"
+        Show          off
+      }
+      Parameter {
+        Variable      "J"
+        Value         "J_g"
+        Show          off
+      }
+      Parameter {
+        Variable      "F"
+        Value         "D_g"
+        Show          off
+      }
+      Parameter {
+        Variable      "p"
+        Value         "n_p"
+        Show          off
+      }
+      Parameter {
+        Variable      "wm0"
+        Value         "Omega_r_0"
+        Show          off
+      }
+      Parameter {
+        Variable      "thm0"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "is0"
+        Value         "[0 0]"
+        Show          off
+      }
+      Parameter {
+        Variable      "psisdq0"
+        Value         "[Psi_sd_0 Psi_sq_0]"
+        Show          off
+      }
+      Terminal {
+        Type          Port
+        Position      [-30, -10]
+        Direction     left
+      }
+      Terminal {
+        Type          Port
+        Position      [-30, 0]
+        Direction     left
+      }
+      Terminal {
+        Type          Port
+        Position      [-30, 10]
+        Direction     left
+      }
+      Terminal {
+        Type          Port
+        Position      [30, -10]
+        Direction     right
+      }
+      Terminal {
+        Type          Port
+        Position      [30, 0]
+        Direction     right
+      }
+      Terminal {
+        Type          Port
+        Position      [30, 10]
+        Direction     right
+      }
+      Terminal {
+        Type          Rotational
+        Position      [30, 30]
+        Direction     right
+      }
+    }

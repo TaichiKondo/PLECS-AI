@@ -1,0 +1,14 @@
+    Component {
+      Type          RotationalSpeedSensor
+      Name          "Speed\nSensor"
+      Show          on
+      Position      [775, 130]
+      Direction     up
+      Flipped       on
+      LabelPosition north
+      Parameter {
+        Variable      "SecondFlange"
+        Value         "1"
+        Show          off
+      }
+    }

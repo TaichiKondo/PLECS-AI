@@ -1,0 +1,22 @@
+    Component {
+      Type          Reference
+      SrcComponent  "Components/Control/Transformations/3ph->S"
+"RF"
+      Name          "3ph->SRF"
+      Show          on
+      Position      [150, 85]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-15, -15; 15, 15]
+      Terminal {
+        Type          Input
+        Position      [-15, 0]
+        Direction     left
+      }
+      Terminal {
+        Type          Output
+        Position      [19, 0]
+        Direction     right
+      }
+    }

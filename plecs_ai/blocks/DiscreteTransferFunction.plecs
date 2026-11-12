@@ -1,0 +1,30 @@
+    Component {
+      Type          DiscreteTransferFunction
+      Name          "Discrete PD"
+      Show          on
+      Position      [170, 110]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Frame         [-30, -15; 30, 15]
+      Parameter {
+        Variable      "Numerator"
+        Value         "[1/(T*fz)+1, -1/(T*fz)]"
+        Show          off
+      }
+      Parameter {
+        Variable      "Denominator"
+        Value         "[1/(T*fp)+1, -1/(T*fp)]"
+        Show          off
+      }
+      Parameter {
+        Variable      "Ts"
+        Value         "T"
+        Show          off
+      }
+      Parameter {
+        Variable      "X0"
+        Value         "0"
+        Show          off
+      }
+    }

@@ -1,0 +1,14 @@
+    Component {
+      Type          DCCurrentSource
+      Name          "Idc"
+      Show          on
+      Position      [40, 260]
+      Direction     down
+      Flipped       on
+      LabelPosition east
+      Parameter {
+        Variable      "I"
+        Value         "Idc"
+        Show          off
+      }
+    }

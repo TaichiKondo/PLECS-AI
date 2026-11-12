@@ -1,0 +1,20 @@
+    Component {
+      Type          Constant
+      Name          "Constant"
+      Show          on
+      Position      [90, 145]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Frame         [-10, -10; 10, 10]
+      Parameter {
+        Variable      "Value"
+        Value         "24"
+        Show          off
+      }
+      Parameter {
+        Variable      "DataType"
+        Value         "10"
+        Show          off
+      }
+    }

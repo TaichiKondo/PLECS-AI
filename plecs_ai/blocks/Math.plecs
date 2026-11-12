@@ -1,0 +1,14 @@
+    Component {
+      Type          Math
+      Name          "Math"
+      Show          off
+      Position      [270, 50]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Operator"
+        Value         "1"
+        Show          off
+      }
+    }

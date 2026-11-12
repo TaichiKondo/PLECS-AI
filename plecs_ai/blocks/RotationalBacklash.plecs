@@ -1,0 +1,19 @@
+    Component {
+      Type          RotationalBacklash
+      Name          "Gear\nBacklash"
+      Show          on
+      Position      [600, 125]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "b"
+        Value         "P.bl"
+        Show          off
+      }
+      Parameter {
+        Variable      "theta0"
+        Value         "0"
+        Show          off
+      }
+    }

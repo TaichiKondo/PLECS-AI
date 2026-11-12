@@ -1,0 +1,101 @@
+    Component {
+      Type          Reference
+      SrcComponent  "Components/Electrical/Transformers/Yy Trafo"
+      Name          "Yy Trafo"
+      Show          on
+      Position      [345, 210]
+      Direction     up
+      Flipped       off
+      LabelPosition north
+      Frame         [-25, -15; 25, 15]
+      Parameter {
+        Variable      "L"
+        Value         "[0 0.005]"
+        Show          off
+      }
+      Parameter {
+        Variable      "R"
+        Value         "[0 0]"
+        Show          off
+      }
+      Parameter {
+        Variable      "n"
+        Value         "[1 1]"
+        Show          off
+      }
+      Parameter {
+        Variable      "im"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "phim"
+        Value         "1e3"
+        Show          off
+      }
+      Parameter {
+        Variable      "Rfe"
+        Value         "1e3"
+        Show          off
+      }
+      Parameter {
+        Variable      "legs"
+        Value         "5"
+        Show          off
+      }
+      Parameter {
+        Variable      "phaseshift"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "i1"
+        Value         "[0 0 0]"
+        Show          off
+      }
+      Parameter {
+        Variable      "i2"
+        Value         "[0 0 0]"
+        Show          off
+      }
+      Terminal {
+        Type          Port
+        Position      [-30, -10]
+        Direction     left
+      }
+      Terminal {
+        Type          Port
+        Position      [-30, 0]
+        Direction     left
+      }
+      Terminal {
+        Type          Port
+        Position      [-30, 10]
+        Direction     left
+      }
+      Terminal {
+        Type          Port
+        Position      [-15, 20]
+        Direction     down
+      }
+      Terminal {
+        Type          Port
+        Position      [30, -10]
+        Direction     right
+      }
+      Terminal {
+        Type          Port
+        Position      [30, 0]
+        Direction     right
+      }
+      Terminal {
+        Type          Port
+        Position      [30, 10]
+        Direction     right
+      }
+      Terminal {
+        Type          Port
+        Position      [15, 20]
+        Direction     down
+      }
+    }

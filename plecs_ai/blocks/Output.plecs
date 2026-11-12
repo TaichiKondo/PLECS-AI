@@ -1,0 +1,19 @@
+    Component {
+      Type          Output
+      Name          "Out1"
+      Show          on
+      Position      [325, 770]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Index"
+        Value         "1"
+        Show          on
+      }
+      Parameter {
+        Variable      "Width"
+        Value         "-1"
+        Show          off
+      }
+    }

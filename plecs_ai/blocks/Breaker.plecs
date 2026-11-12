@@ -1,0 +1,24 @@
+    Component {
+      Type          Breaker
+      Name          "Br1"
+      Show          off
+      Position      [680, 185]
+      Direction     right
+      Flipped       on
+      LabelPosition north
+      Parameter {
+        Variable      "s_init"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "SwitchModel"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "f_grid"
+        Value         "0"
+        Show          off
+      }
+    }

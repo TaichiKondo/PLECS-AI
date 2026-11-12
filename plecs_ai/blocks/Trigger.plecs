@@ -1,0 +1,29 @@
+    Component {
+      Type          Trigger
+      Name          "Trigger"
+      Show          on
+      Position      [55, 20]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Index"
+        Value         "1"
+        Show          on
+      }
+      Parameter {
+        Variable      "Width"
+        Value         "-1"
+        Show          off
+      }
+      Parameter {
+        Variable      "TriggerType"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "ShowOutput"
+        Value         "1"
+        Show          off
+      }
+    }

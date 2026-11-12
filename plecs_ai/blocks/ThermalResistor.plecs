@@ -1,0 +1,14 @@
+    Component {
+      Type          ThermalResistor
+      Name          "Rth"
+      Show          on
+      Position      [500, 260]
+      Direction     left
+      Flipped       off
+      LabelPosition north
+      Parameter {
+        Variable      "Rth"
+        Value         "5"
+        Show          off
+      }
+    }

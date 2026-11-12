@@ -1,0 +1,19 @@
+    Component {
+      Type          ControlledTorque
+      Name          "Torque"
+      Show          on
+      Position      [385, 250]
+      Direction     left
+      Flipped       off
+      LabelPosition east
+      Parameter {
+        Variable      "SecondFlange"
+        Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "StateSpaceInlining"
+        Value         "2"
+        Show          off
+      }
+    }

@@ -1,0 +1,71 @@
+    Component {
+      Type          Reference
+      SrcComponent  "Components/Electrical/Power Semiconductors/IGBT2"
+      Name          "IGBT di/dt"
+      Show          on
+      Position      [130, 115]
+      Direction     right
+      Flipped       on
+      LabelPosition south
+      Frame         [-15, -17; 15, 0]
+      Parameter {
+        Variable      "Vces"
+        Value         "3600"
+        Show          off
+      }
+      Parameter {
+        Variable      "Ic"
+        Value         "600"
+        Show          off
+      }
+      Parameter {
+        Variable      "Vf"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "Ron"
+        Value         ".001"
+        Show          off
+      }
+      Parameter {
+        Variable      "Roff"
+        Value         "inf"
+        Show          off
+      }
+      Parameter {
+        Variable      "tr"
+        Value         "200e-9"
+        Show          off
+      }
+      Parameter {
+        Variable      "tf"
+        Value         "300e-9"
+        Show          off
+      }
+      Parameter {
+        Variable      "Lsig"
+        Value         "30e-9"
+        Show          off
+      }
+      Parameter {
+        Variable      "i_init"
+        Value         "0"
+        Show          off
+      }
+      Terminal {
+        Type          Port
+        Position      [0, -20]
+        Direction     up
+      }
+      Terminal {
+        Type          Input
+        Position      [-20, 0]
+        Direction     left
+      }
+      Terminal {
+        Type          Port
+        Position      [0, 20]
+        Direction     down
+      }
+    }

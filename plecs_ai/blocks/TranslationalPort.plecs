@@ -1,0 +1,19 @@
+    Component {
+      Type          TranslationalPort
+      Name          "Road Load"
+      Show          on
+      Position      [650, 155]
+      Direction     right
+      Flipped       on
+      LabelPosition south
+      Parameter {
+        Variable      "Index"
+        Value         "1"
+        Show          on
+      }
+      Parameter {
+        Variable      "Width"
+        Value         "-1"
+        Show          off
+      }
+    }

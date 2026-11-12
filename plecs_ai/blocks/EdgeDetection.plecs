@@ -1,0 +1,14 @@
+    Component {
+      Type          EdgeDetection
+      Name          "Edge Detection6"
+      Show          off
+      Position      [285, 135]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Direction"
+        Value         "2"
+        Show          off
+      }
+    }

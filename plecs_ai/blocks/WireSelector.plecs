@@ -1,0 +1,18 @@
+    Component {
+      Type          WireSelector
+      Name          "Wire\nSelector"
+      Show          off
+      Position      [180, 40]
+      Direction     right
+      Flipped       off
+      Parameter {
+        Variable      "InputWidth"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "OutputIndices"
+        Value         "ones(1,nPhase)"
+        Show          off
+      }
+    }

@@ -1,0 +1,22 @@
+    Component {
+      Type          Reference
+      SrcComponent  "Components/Control/Modulators/3-Phase\\nOvermodulatio"
+"n"
+      Name          "3-Phase\nOvermodulation"
+      Show          on
+      Position      [290, 80]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-20, -20; 20, 20]
+      Terminal {
+        Type          Output
+        Position      [24, 0]
+        Direction     right
+      }
+      Terminal {
+        Type          Input
+        Position      [-20, 0]
+        Direction     left
+      }
+    }

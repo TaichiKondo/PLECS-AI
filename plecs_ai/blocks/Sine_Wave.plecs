@@ -1,0 +1,41 @@
+    Component {
+      Type          Reference
+      SrcComponent  "Deprecated/Control/Sources/Sine Wave"
+      Name          "Reference_a"
+      Show          on
+      Position      [70, 110]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-15, -15; 15, 15]
+      Parameter {
+        Variable      "Amplitude"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "Bias"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "Frequency"
+        Value         "fac"
+        Show          on
+      }
+      Parameter {
+        Variable      "Phase"
+        Value         "[0 180]"
+        Show          on
+      }
+      Parameter {
+        Variable      "Units"
+        Value         "3"
+        Show          off
+      }
+      Terminal {
+        Type          Output
+        Position      [19, 0]
+        Direction     right
+      }
+    }

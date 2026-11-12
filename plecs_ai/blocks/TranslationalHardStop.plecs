@@ -1,0 +1,24 @@
+    Component {
+      Type          TranslationalHardStop
+      Name          "Hard Stop"
+      Show          on
+      Position      [635, 260]
+      Direction     right
+      Flipped       off
+      LabelPosition west
+      Parameter {
+        Variable      "x_max"
+        Value         "P.hs"
+        Show          off
+      }
+      Parameter {
+        Variable      "x_min"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "x0"
+        Value         "0"
+        Show          off
+      }
+    }

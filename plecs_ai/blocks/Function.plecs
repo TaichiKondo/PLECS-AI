@@ -1,0 +1,15 @@
+    Component {
+      Type          Function
+      Name          "1-Psw/Pin"
+      Show          on
+      Position      [305, 120]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Frame         [-20, -10; 20, 10]
+      Parameter {
+        Variable      "f(u)"
+        Value         "(1-u[1]/u[2])*100"
+        Show          off
+      }
+    }

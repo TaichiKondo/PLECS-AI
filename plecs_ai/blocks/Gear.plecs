@@ -1,0 +1,14 @@
+    Component {
+      Type          Gear
+      Name          "Gear"
+      Show          on
+      Position      [120, 60]
+      Direction     down
+      Flipped       on
+      LabelPosition south
+      Parameter {
+        Variable      "g"
+        Value         "p"
+        Show          on
+      }
+    }

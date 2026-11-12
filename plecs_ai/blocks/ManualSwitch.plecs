@@ -1,0 +1,14 @@
+    Component {
+      Type          ManualSwitch
+      Name          "S1"
+      Show          on
+      Position      [280, 225]
+      Direction     down
+      Flipped       off
+      LabelPosition east
+      Parameter {
+        Variable      "s"
+        Value         "1"
+        Show          off
+      }
+    }

@@ -1,0 +1,14 @@
+    Component {
+      Type          TranslationalSpeedSensor
+      Name          "Translational\nSpeed1"
+      Show          off
+      Position      [400, 235]
+      Direction     right
+      Flipped       on
+      LabelPosition east
+      Parameter {
+        Variable      "SecondFlange"
+        Value         "1"
+        Show          off
+      }
+    }

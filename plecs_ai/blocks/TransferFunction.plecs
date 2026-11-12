@@ -1,0 +1,26 @@
+    Component {
+      Type          TransferFunction
+      Name          "Transfer Fcn"
+      Show          on
+      Position      [385, 95]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Frame         [-30, -15; 30, 15]
+      Parameter {
+        Variable      "Numerator"
+        Value         "[R_series*C_series 1]"
+        Show          off
+      }
+      Parameter {
+        Variable      "Denominator"
+        Value         "[R_series*C_series*C_parallel (C_series+C_paral"
+"lel) 0]"
+        Show          off
+      }
+      Parameter {
+        Variable      "X0"
+        Value         "0"
+        Show          off
+      }
+    }

@@ -1,0 +1,24 @@
+    Component {
+      Type          Lookup1D
+      Name          "1D-Table"
+      Show          on
+      Position      [135, 110]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "x"
+        Value         "Vcompval"
+        Show          off
+      }
+      Parameter {
+        Variable      "f(x)"
+        Value         "M1val"
+        Show          off
+      }
+      Parameter {
+        Variable      "ZeroCrossingSignals"
+        Value         "1"
+        Show          off
+      }
+    }

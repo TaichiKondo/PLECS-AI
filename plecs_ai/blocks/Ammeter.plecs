@@ -1,0 +1,9 @@
+    Component {
+      Type          Ammeter
+      Name          "Am1"
+      Show          on
+      Position      [235, 95]
+      Direction     left
+      Flipped       off
+      LabelPosition south
+    }

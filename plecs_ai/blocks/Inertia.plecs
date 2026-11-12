@@ -1,0 +1,24 @@
+    Component {
+      Type          Inertia
+      Name          "Load"
+      Show          on
+      Position      [730, 130]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "J"
+        Value         "2*P.J/3"
+        Show          off
+      }
+      Parameter {
+        Variable      "w0"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "theta0"
+        Value         ""
+        Show          off
+      }
+    }

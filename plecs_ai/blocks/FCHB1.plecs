@@ -1,0 +1,67 @@
+    Component {
+      Type          Reference
+      SrcComponent  "Components/Electrical/Power Modules/FCHB1"
+      Name          "FCHB1"
+      Show          on
+      Position      [280, 120]
+      Direction     up
+      Flipped       off
+      LabelPosition west
+      Frame         [-20, -65; 20, 65]
+      LabelFrame    [-10, -53; 23, 53]
+      Parameter {
+        Variable      "semiSymbol"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "N"
+        Value         "n_cell-1"
+        Show          off
+      }
+      Parameter {
+        Variable      "assert"
+        Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "Configuration"
+        Value         "1"
+        Show          off
+      }
+      Terminal {
+        Type          Input
+        Position      [-20, -30]
+        Direction     left
+      }
+      Terminal {
+        Type          Port
+        Position      [25, 0]
+        Direction     right
+      }
+      Terminal {
+        Type          Port
+        Position      [-25, -50]
+        Direction     left
+      }
+      Terminal {
+        Type          Input
+        Position      [-20, 30]
+        Direction     left
+      }
+      Terminal {
+        Type          Port
+        Position      [-25, 50]
+        Direction     left
+      }
+      Terminal {
+        Type          Port
+        Position      [0, -70]
+        Direction     up
+      }
+      Terminal {
+        Type          Port
+        Position      [0, 70]
+        Direction     down
+      }
+    }

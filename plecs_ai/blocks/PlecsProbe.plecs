@@ -1,0 +1,14 @@
+    Component {
+      Type          PlecsProbe
+      Name          "Mains current"
+      Show          on
+      Position      [100, 345]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Probe {
+        Component     "Am1"
+        Path          ""
+        Signals       {"Measured current"}
+      }
+    }

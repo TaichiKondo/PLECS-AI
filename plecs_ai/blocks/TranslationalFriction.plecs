@@ -1,0 +1,24 @@
+    Component {
+      Type          TranslationalFriction
+      Name          "Road Load\n(Steep Grade)"
+      Show          on
+      Position      [755, 180]
+      Direction     left
+      Flipped       on
+      LabelPosition west
+      Parameter {
+        Variable      "F_brk"
+        Value         "75/P.rw*P.g_ratio/10"
+        Show          off
+      }
+      Parameter {
+        Variable      "F_C"
+        Value         "75/P.rw*P.g_ratio/10"
+        Show          off
+      }
+      Parameter {
+        Variable      "c_v"
+        Value         "3200"
+        Show          off
+      }
+    }

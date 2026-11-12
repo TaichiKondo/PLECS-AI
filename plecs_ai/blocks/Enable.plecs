@@ -1,0 +1,29 @@
+    Component {
+      Type          Enable
+      Name          "Enable"
+      Show          on
+      Position      [45, 30]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Index"
+        Value         "5"
+        Show          on
+      }
+      Parameter {
+        Variable      "DataType"
+        Value         "10"
+        Show          off
+      }
+      Parameter {
+        Variable      "Width"
+        Value         "-1"
+        Show          off
+      }
+      Parameter {
+        Variable      "ShowOutput"
+        Value         "1"
+        Show          off
+      }
+    }

@@ -1,0 +1,14 @@
+    Component {
+      Type          CombinatorialLogic
+      Name          "Combinatorial\nLogic"
+      Show          on
+      Position      [155, 105]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "TruthTable"
+        Value         "[0 1;1 0;0 1;0 1;1 0;1 0;0 0;0 0]"
+        Show          off
+      }
+    }

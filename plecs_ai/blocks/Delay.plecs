@@ -1,0 +1,24 @@
+    Component {
+      Type          Delay
+      Name          "Delay"
+      Show          on
+      Position      [515, 130]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "N"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "X0"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "Ts"
+        Value         "Ts/2"
+        Show          on
+      }
+    }
