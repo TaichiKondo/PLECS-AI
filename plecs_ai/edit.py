@@ -231,7 +231,7 @@ def connection(kind, src, src_t, dst, dst_t, points=None):
     return s
 
 
-# ---- annotations (format copied from balancer_v5 as saved by the user) ------
+# ---- annotations (format copied from frames the user drew in PLECS) ---------
 
 def text_annotation(lines, center):
     """Text note. lines: list of plain-text lines; center: (x, y) of the box.

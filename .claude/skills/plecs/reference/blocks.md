@@ -140,14 +140,14 @@ INDEX.md の端子情報は「その番号が入力側・出力側で使われ�
 
 ## 代用の例
 
-カタログに本物があるので、新しく作るときは本物を使う。下の代用は `examples/balancer` で使った実績として残す。
+カタログに本物があるので、新しく作るときは本物を使う。下の代用は、カタログが小さかった頃の実験（モデルは非公開）で動いた実績として残す。
 
-| 欲しいブロック | 今後の使い方 | balancerでの代用 |
+| 欲しいブロック | 今後の使い方 | 以前の代用 |
 |---|---|---|
-| Saturation | `Saturation` | PIDを `kp=1`、`ki=0`、リミット付きにした（`make_v3.py` の VcapClamp） |
-| Integrator | `Integrator` | PIDを `kp=0`、`ki=1` にした（`make_v4.py` の RateInt） |
-| Rate Limiter | `RateLimiter`（`SampleTimeMode=2`） | Sum → 飽和 → 積分器の帰還ループにした（`make_v4.py`）。小信号では一次遅れになる |
-| Step | `Step` | `Ramp` を `slope=1e7` にした（`make_v2.py`） |
+| Saturation | `Saturation` | PIDを `kp=1`、`ki=0`、リミット付きにした |
+| Integrator | `Integrator` | PIDを `kp=0`、`ki=1` にした |
+| Rate Limiter | `RateLimiter`（`SampleTimeMode=2`） | Sum → 飽和 → 積分器の帰還ループにした。小信号では一次遅れになる |
+| Step | `Step` | `Ramp` を `slope=1e7` にした |
 | Gain | `Gain` | 使っていない |
 
 ## ブロックを増やす手順

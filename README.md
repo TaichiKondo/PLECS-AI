@@ -25,18 +25,18 @@ AIにできること：
    ```
 
 2. PLECSを起動し、PreferencesでRPCインターフェースを有効にします（既定では無効です）。ポートは1080のままにします。変えた場合は、環境変数 `PLECS_RPC_URL` に `http://localhost:ポート番号` を設定します。
-3. 動作を確かめます。PLECSが起動した状態で次を実行し、`results/balancer_v6.png` に回路図が出力されれば準備完了です。
+3. 動作を確かめます。PLECSが起動した状態で次を実行し、`results/pmsm_foc_v3.png` に回路図が出力されれば準備完了です。
 
    ```
-   cd examples/balancer
-   python -m plecs_ai.snapshot balancer_v6
+   cd examples/pmsm_foc
+   python -m plecs_ai.snapshot pmsm_foc_v3
    ```
 
 ## 使い方
 
 このリポジトリのフォルダでClaude Codeを起動すると、`plecs` というskillが自動で使えるようになります。あとは普通に頼むだけです。
 
-> `examples/balancer/balancer_v6.plecs` の負荷を5 Aから15 Aのステップにして、Ibatの偏差が1 A以内に戻るまでの時間を調べて。
+> `examples/pmsm_foc/pmsm_foc_v3.plecs` の負荷トルクを3 N·mから5 N·mに増やして、速度の落ち込みと回復時間を調べて。
 
 > このモデルのACRの出力にリミッタを入れて、新しいファイルとして保存して。回路図の見た目も確認して。
 
@@ -60,9 +60,10 @@ AIにできること：
 | `samples/` | カタログの取り込み元にした見本モデル |
 | `tests/block_tests.py` | カタログのブロックをPLECSで動かして、端子とパラメータを確かめる試験 |
 | `examples/pmsm_foc/` | 一から生成したPMSMのベクトル制御モデル。生成、評価、波形の描画のスクリプト |
-| `examples/balancer/` | 最初の実験の一式（スーパーキャパシタ用双方向DC-DC）。編集スクリプト、試験スクリプト、結果の報告 |
 
-人が読むなら、まず `examples/balancer/REPORT.md`（何ができたか）、次に `reference/` の3つ（何が分かっているか）がお勧めです。
+| `docs/` | READMEに載せる図 |
+
+人が読むなら、まず `examples/pmsm_foc/README.md`（何ができたか）、次に `reference/` の3つ（何が分かっているか）がお勧めです。
 
 ## 使えるブロックを増やす
 

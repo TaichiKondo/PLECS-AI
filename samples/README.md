@@ -10,6 +10,6 @@ python -m plecs_ai.harvest samples/<ファイル名>.plecs
 
 現在のカタログは、次の順に取り込みました（先に取り込んだものが優先されます）。
 
-1. `examples/balancer/balancer_apr.plecs`（23種類）
+1. 最初の実験に使ったモデル（非公開）（23種類）
 2. `parts_sample.plecs`（11種類）
 3. PLECS 5.0 付属の `demos` フォルダの92ファイル（161種類）

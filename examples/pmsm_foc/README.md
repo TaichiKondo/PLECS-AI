@@ -12,9 +12,9 @@
 
 `make_pmsm_foc.py` は再実行しないでください。人が直した向きが消えます（`Model.write` は既存のファイルを上書きしないので、そのままではエラーで止まります）。
 
-![回路図](results/pmsm_foc_v2.png)
+![回路図（v3）](../../docs/pmsm_foc/pmsm_foc_v3.png)
 
-PLECSで `pmsm_foc_v2.plecs` を開いてシミュレーションを実行し、Scopeを開くと波形を確認できます。
+PLECSで `pmsm_foc_v2.plecs` または `pmsm_foc_v3.plecs` を開いてシミュレーションを実行し、Scopeを開くと波形を確認できます。
 
 ## 構成
 
@@ -38,13 +38,17 @@ python run_pmsm_foc.py pmsm_foc_v2        # シミュレーションと評価値
 python run_pmsm_foc.py Kp_w=1.04 Ki_w=163 # ゲインを変えて試す
 python plot_pmsm_foc.py pmsm_foc_v2       # results/pmsm_foc_v2_waveforms.png
 python -m plecs_ai.snapshot pmsm_foc_v2   # results/pmsm_foc_v2.png（回路図）
+python make_pmsm_foc_v3.py                # v2 から pmsm_foc_v3.plecs（離散PI）を作る
+python run_pmsm_foc.py pmsm_foc_v3
 ```
 
 `plot_pmsm_foc.py` だけは matplotlib が必要です。
 
 ## 結果
 
-![波形](results/pmsm_foc_waveforms.png)
+![波形（v2）](../../docs/pmsm_foc/pmsm_foc_v2_waveforms.png)
+
+下の表は最初の版（`pmsm_foc.plecs`）の値です。v2もほぼ同じです。
 
 | 項目 | 値 |
 |---|---|
@@ -65,6 +69,8 @@ python -m plecs_ai.snapshot pmsm_foc_v2   # results/pmsm_foc_v2.png（回路図�
 | 負荷投入時の速度の落ち込み | 6.83 % | 7.21 % |
 | 回復時間 | 27.6 ms | 27.3 ms |
 | 負荷時のq軸電流 | 4.970 A | 4.968 A |
+
+![波形（v3）](../../docs/pmsm_foc/pmsm_foc_v3_waveforms.png)
 
 連続のときに決めたゲインのままで動いた。サンプリングとホールドの遅れの分だけ、速度の応答がわずかに遅くなっている。q軸電流指令は速度制御の周期（1 ms）ごとの階段になる。
 
